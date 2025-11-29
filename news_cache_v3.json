@@ -1,0 +1,2624 @@
+{
+  "https://hytale.com/news/2025/11/hytale-early-access-january-13-2026": {
+    "blocks": [
+      {
+        "type": "text",
+        "content": "Hytale Early Access: January 13, 2026",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "text",
+        "content": "Hytale enters early access on January 13, 2026.",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Pre-purchase opens December 13, 2025.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Two weeks ago, we, the original founders, repurchased Hytale, months after it was cancelled. We revived the project, and we are returning to a four-year-old legacy build that had been abandoned. We are personally committing funding for many years to come.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We stepped away from the newer engine, which was intended to be a complete cross-platform rewrite, and we are now focused on reviving the original version. This required picking, choosing, and merging more than 300 GitHub branches into a single working branch. It was a significant engineering effort, but we’re now confident enough to launch early access.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale and Hypixel Studios are independent again, and we are returning to the original vision from the 2018 trailer. Because we went back to an older game build that was now meant for prototypes, some parts of the game will feel behind, but momentum is strong, and we’re working fast to make this into the game we all dreamed of.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Modding and creative tools are in a decent state; however, they’re not where we want them long term. That being said, they’re ready for players who want to create content on day 1. This is a good moment for modders, server owners, and creators to step in early! They will play a significant role in Hytale’s future.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Since the cancellation, we’ve rehired more than 40 former and new team members, bringing the total to 50. Reacquiring a game from a AAA studio and preparing an early access launch within weeks is rare, and players will be able to watch the progress as it happens.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "If you don’t feel comfortable pre-ordering, please don’t. This is true early access, meaning it’s still very much unfinished and will be buggy for a while, but you have my and the team's commitment to make Hytale the game we’ve always wanted it to be.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The first impression will be rough, but the path ahead matters more. More details are coming soon. Follow our social channels for updates, and we hope to see you on January 13, 2026.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Thank you, everyone, for your support. Hytale has been through a long journey, and soon, we will be home.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "~ Simon and the entire Hytale team",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      }
+    ],
+    "translated": [
+      {
+        "type": "text",
+        "content": "Ранний доступ Hytale: 13 января 2026 г.",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "text",
+        "content": "Hytale выйдет в раннем доступе 13 января 2026 года.",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Предварительная покупка откроется 13 декабря 2025 г.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Две недели назад мы, первоначальные основатели, выкупили Hytale, спустя несколько месяцев после его закрытия. Мы возобновили проект и возвращаемся к устаревшей сборке четырехлетней давности, от которой отказались. Мы лично берем на себя обязательства по финансированию на многие годы вперед.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы отказались от нового движка, который должен был стать полной кросс-платформенной переработкой, и теперь сосредоточены на возрождении исходной версии. Для этого потребовалось собрать, выбрать и объединить более 300 веток GitHub в одну рабочую ветку. Это была значительная инженерная работа, но теперь мы достаточно уверены в себе, чтобы запустить ранний доступ.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale и Hypixel Studios снова независимы, и мы возвращаемся к первоначальному видению из трейлера 2018 года. Поскольку мы вернулись к более старой сборке игры, которая теперь предназначалась для прототипов, некоторые части игры будут отставать, но темп велик, и мы быстро работаем над тем, чтобы воплотить это в игру, о которой мы все мечтали.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Инструменты для моддинга и творчества находятся в достойном состоянии; однако они не там, где мы хотим их в долгосрочной перспективе. При этом они готовы для игроков, которые хотят создавать контент с первого дня. Это хороший момент для моддеров, владельцев серверов и создателей, чтобы вмешаться заранее! Они сыграют значительную роль в будущем Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "С момента отмены мы повторно наняли более 40 бывших и новых членов команды, в результате чего их общее число достигло 50. Повторное приобретение игры у AAA-студии и подготовка к запуску в раннем доступе в течение нескольких недель — это редкость, и игроки смогут наблюдать за прогрессом по мере его развития.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Если вам неудобно делать предварительный заказ, не делайте этого. Это настоящий ранний доступ, то есть он еще очень незакончен и какое-то время будет содержать ошибки, но у вас есть мое и нашей командой обязательство сделать Hytale той игрой, которой мы всегда хотели.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Первое впечатление будет тяжелым, но путь вперед имеет большее значение. Более подробная информация появится в ближайшее время. Следите за обновлениями в наших социальных сетях, и мы надеемся увидеть вас 13 января 2026 года.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Спасибо всем за вашу поддержку. Hytale прошла долгий путь, и скоро мы будем дома.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "~ Саймон и вся команда Hytale",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      }
+    ]
+  },
+  "https://hytale.com/news/2025/11/hytale-creative-mode": {
+    "blocks": [
+      {
+        "type": "text",
+        "content": "Hytale Creative Mode",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "text",
+        "content": "Hey everyone! I am Ktar, the Creative Mode engineer on Hytale. I'm excited to show you more about the creative side of Hytale! By swapping to Creative Mode in your world, you can fly around and explore, create, edit, make things explode, and more! We are focused on creating an immersive experience that feels uniquely 'Hytale' while supporting all players and creators with the features they need.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "It's best explained visually, so here is our first video showcasing our Creative Tools that will be available for the upcoming early access!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Now that you've seen the magic tools, let's dive deeper into everything you saw!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Scripted Brushes",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "The first thing that I do in the video is take out some of the Scripted Brushes that ship with Hytale. These are simple asset-defined brushes that any modder or user can create more of. Simply drag and drop them into your inventory to create mountains, grassy paths, procedurally generated ruins, and more! You can even edit these scripted brushes in the Hytale Node Editor.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Creative Mode Quick Settings Panel",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "The Creative Mode Quick Settings Panel allows you to quickly edit your Creative Mode settings like flight speed, inertia, and more. It also expands and changes depending on the item in your hand to allow you to have even more customizability of your tools.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Player Model Changer / NPC Browser",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "You can see our list of over 100 models that you can spawn in your creative world or remix however you want. In this case, I wanted to become a Corgi model, because dogs are the best.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Prefab Browser / Prefab Editor",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "I briefly opened the prefab browser on my way to the Prefab Editor. The Prefab Editor is a separate editing environment where you can load a selection of different prefabs into an empty world where you can edit them, select them, or just browse the prefabs visually. In the video, I just go in to select the prefab ruins that I want to paste into my small environment.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Paste Tool",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "I now use the Paste Tool to move the prefab to the exact spot that I want before pasting it in. The Paste Tool allows you to precisely place a loaded prefab, or even use a prefab like a brush. You can use the arrow keys to easily make detailed, precise placements of multiblock structures.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Machinima Tool",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Next, I grab the Machinima Tool that looks like a camera, and I create a Camera actor that allows me to specify keyframes to animate the camera movement. After placing all my keyframes, I can adjust the speed and other settings to get the right control I want. The Machinima Tools have a LOT more features that aren't displayed in this quick video. Not only are there many features that I don't show in this video for the tool, but the Machinima Tools are scheduled for a massive upgrade in functionality and user experience in the coming months after launch.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Flying Modes",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Flight in Hytale is very customizable! You can change the speed, controls, flight mode (hover or directional flight), and even the inertia! If you like to stop suddenly, or drift around at high speeds, Hytale is here to support you!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Shape Brush",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "The Paintbrush allows you to paint many different shapes of any size into the world. You can do pyramids, cones, squares, and more! You can change the materials, shape, density, wall thickness, axis locked to, masks, and more! The Paintbrush is a very customizable tool that you can use for many purposes, and we hope to only make it better with time!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Selection Tool",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "The Selection Tool is another versatile and customizable tool. It allows you to select 3d spaces and perform many different kinds of operations on it. It allows you to save prefabs, paste tons of blocks precisely, move entire objects, define regions, regenerate chunks, extrude, and more! We're looking forward to adding selections that support any shape after release, as well as a \"magic wand\" tool for automatically creating selections by clicking on materials and selecting all of the same material nearby.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Ruler / Laser Pointer Tools",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "The Ruler tool allows you to measure distances or mark outlines by placing lines into the world. The Laser Pointer tool allows you to show your friends where to look when words just aren't enough.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Help Menu",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Our development pace is so quick that we've already made last week's help menu screenshot old! The new and improved help menu lets you find creative commands much more quickly and discover new features easily. We hope to continue improving command support via help and new features.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Creative People Using Creative Tools",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Now, for an example of what professional creatives look like using the tools, here are some talented builders with a timelapse castle build that showcases many different types of blocks, flying, brushes, and the Hytale Machinima recording tools. This is an hour of building condensed into about three minutes. Enjoy!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "At the start of the video you can see a lot of terrain being created using the different Creative Mode brushes and tools. First the builder will greybox some terrain using the Stone material on a sphere brush. Then they smooth it and refine the shape using the Smooth tool and some manual building. The next step you'll see is that the builder begins to apply layers of material with multiple brushes and techniques to apply the right colors to the terrain.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "For the castle building, the builders used the Selection Tool, copy, cut, paste, and rotate commands to speed up the building of the shape of the castle. Then, they use the brush tool with a mask (so that it replaces blocks instead of adding new blocks) to set the base layer materials and color of the castle. Then they go in and add all the details by hand.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Currently, the creative experience in Hytale is focused mostly on tools to support content creation. However, we are actively designing a more casual and unique experience to cater to audiences that aren't looking for an editor-like feel, separate from the Adventure and Exploration modes. This additional creative experience will focus on playful interactions over editor features.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Creative Mode allows you, the players, to do so many different things that we can't even explain them all. We can't wait to see you in game!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Community Support",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We are working relentlessly to deliver you a great experience as a creative in Hytale and will keep doing so for years to come. We plan to expand our creative tools team to meet these goals, and we'll work alongside you and the community to improve our tools and features based on your feedback and suggestions!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "I hope to see you in our Hytale Discord's#creative-modechannel, where I'll personally be present, and sometimes pop in to chat with fellow creatives to read your input!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Together, we will shape the future of Creative Mode for Hytale!",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      }
+    ],
+    "translated": [
+      {
+        "type": "text",
+        "content": "Творческий режим Hytale",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "text",
+        "content": "Привет всем! Я Ктар, инженер творческого режима в Hytale. Я рад показать вам больше о творческой стороне Hytale! Переключившись в творческий режим в своем мире, вы сможете летать и исследовать, создавать, редактировать, взрывать предметы и многое другое! Мы сосредоточены на создании захватывающего опыта, уникального для Hytale, и при этом поддерживаем всех игроков и создателей необходимыми им функциями.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Лучше всего это объясняется визуально, поэтому вот наше первое видео, демонстрирующее наши творческие инструменты, которые будут доступны в предстоящем раннем доступе!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Теперь, когда вы увидели волшебные инструменты, давайте углубимся во все, что вы видели!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Скриптованные кисти",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Первое, что я делаю в видео, — это достаю несколько скриптовых кистей, которые входят в комплект Hytale. Это простые кисти, определяемые активами, которые любой моддер или пользователь может создать больше. Просто перетащите их в свой инвентарь, чтобы создать горы, травянистые тропы, процедурно генерируемые руины и многое другое! Вы даже можете редактировать эти скриптовые кисти в редакторе узлов Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Панель быстрых настроек творческого режима",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Панель быстрых настроек творческого режима позволяет быстро редактировать настройки творческого режима, такие как скорость полета, инерция и многое другое. Он также расширяется и меняется в зависимости от предмета в вашей руке, что дает вам еще больше возможностей настройки ваших инструментов.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Сменщик модели игрока / Браузер NPC",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Вы можете просмотреть наш список из более чем 100 моделей, которые вы можете создавать в своем творческом мире или создавать ремиксы по своему усмотрению. В данном случае мне хотелось стать моделью корги, потому что собаки самые лучшие.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Браузер префабов / Редактор префабов",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Я ненадолго открыл браузер префабов по пути к редактору префабов. Редактор префабов — это отдельная среда редактирования, в которой вы можете загружать набор различных префабов в пустой мир, где вы можете редактировать их, выбирать их или просто просматривать префабы визуально. В видео я просто выбираю сборные руины, которые хочу вставить в свою небольшую среду.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Инструмент «Вставить»",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Теперь я использую инструмент «Вставить», чтобы переместить префаб в нужное место, прежде чем вставлять его. Инструмент «Вставить» позволяет точно разместить загруженный префаб или даже использовать префаб как кисть. Вы можете использовать клавиши со стрелками, чтобы легко и точно размещать многоблочные структуры.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Инструмент Машинима",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Затем я беру инструмент Machinima Tool, который выглядит как камера, и создаю актера камеры, который позволяет мне указывать ключевые кадры для анимации движения камеры. После размещения всех ключевых кадров я могу настроить скорость и другие параметры, чтобы получить нужный мне контроль. Инструменты Machinima имеют НАМНОГО больше функций, которые не показаны в этом коротком видео. Мало того, что в этом видео есть множество функций, которые я не показываю в этом видео, но в ближайшие месяцы после запуска Machinima Tools запланировано масштабное обновление функциональности и удобства для пользователей.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Режимы полета",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Полет в Hytale очень настраиваемый! Вы можете изменить скорость, управление, режим полета (зависание или направленный полет) и даже инерцию! Если вам нравится внезапно останавливаться или дрейфовать на высоких скоростях, Hytale здесь, чтобы поддержать вас!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Формирующая кисть",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Кисть позволяет рисовать в мире множество различных фигур любого размера. Вы можете делать пирамиды, конусы, квадраты и многое другое! Вы можете изменить материалы, форму, плотность, толщину стенок, заблокированную ось, маски и многое другое! Кисть — это очень настраиваемый инструмент, который можно использовать для многих целей, и мы надеемся, что со временем он станет только лучше!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Инструмент выбора",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Инструмент «Выделение» — еще один универсальный и настраиваемый инструмент. Он позволяет выбирать трехмерные пространства и выполнять над ними множество различных операций. Он позволяет сохранять префабы, точно вставлять тонны блоков, перемещать целые объекты, определять регионы, регенерировать фрагменты, вытягивать и многое другое! Мы с нетерпением ждем возможности добавить выделения, поддерживающие любую форму, после релиза, а также инструмент «волшебная палочка» для автоматического создания выделений путем щелчка по материалам и выбора всех одинаковых материалов поблизости.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Инструменты линейки/лазерной указки",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Инструмент «Линейка» позволяет измерять расстояния или отмечать контуры, размещая линии в мире. Инструмент «Лазерная указка» позволяет вам показывать друзьям, куда смотреть, когда слов недостаточно.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Меню помощи",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Темпы нашей разработки настолько высоки, что мы уже сделали скриншот меню справки, сделанный на прошлой неделе, устаревшим! Новое улучшенное меню справки позволяет гораздо быстрее находить творческие команды и легко открывать новые функции. Мы надеемся продолжить улучшение поддержки команд с помощью справки и новых функций.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Творческие люди, использующие творческие инструменты",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Теперь, в качестве примера того, как профессиональные креативщики выглядят с использованием этих инструментов, вот несколько талантливых строителей, создавших таймлапс-замок, демонстрирующий множество различных типов блоков, летающих объектов, кистей и инструментов записи Hytale Machinima. Это час строительства, сжатый примерно в три минуты. Наслаждаться!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В начале видео вы можете увидеть множество ландшафтов, созданных с помощью различных кистей и инструментов творческого режима. Сначала строитель нарисует некоторую местность серой рамкой, используя материал «Камень» на сферической кисти. Затем они сглаживают ее и уточняют форму, используя инструмент «Сглаживание» и немного ручного построения. Следующий шаг, который вы увидите, — это то, что строитель начинает наносить слои материала с помощью нескольких кистей и техник, чтобы применить к местности правильные цвета.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Для строительства замка строители использовали инструмент «Выделение», команды копирования, вырезания, вставки и поворота, чтобы ускорить создание формы замка. Затем они используют инструмент «Кисть» с маской (чтобы он заменял блоки, а не добавлял новые блоки), чтобы установить материалы базового слоя и цвет замка. Затем они заходят и добавляют все детали вручную.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В настоящее время творческий опыт Hytale сосредоточен в основном на инструментах для поддержки создания контента. Тем не менее, мы активно разрабатываем более непринужденный и уникальный опыт, чтобы удовлетворить аудиторию, которая не ищет ощущения редактора, отдельно от режимов «Приключение» и «Исследование». Этот дополнительный творческий опыт будет сосредоточен на игровом взаимодействии с функциями редактора.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Творческий режим позволяет вам, игрокам, делать так много разных вещей, что мы даже не сможем объяснить их все. Нам не терпится увидеть вас в игре!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Поддержка сообщества",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы неустанно работаем над тем, чтобы вы получили отличный творческий опыт в Hytale, и будем продолжать делать это еще долгие годы. Мы планируем расширить нашу команду по творческим инструментам для достижения этих целей и будем работать вместе с вами и сообществом над улучшением наших инструментов и функций на основе ваших отзывов и предложений!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Я надеюсь увидеть вас на канале #creative-mode нашего Hytale Discord, где я буду лично присутствовать, а иногда и заглядывать в чат с другими творческими людьми, чтобы прочитать ваши отзывы!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Вместе мы создадим будущее Creative Mode для Hytale!",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      }
+    ]
+  },
+  "https://hytale.com/news/2025/11/hytale-modding-strategy-and-status": {
+    "blocks": [
+      {
+        "type": "text",
+        "content": "Hytale Modding Strategy and Status",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "text",
+        "content": "Hytale Modding Strategy and Status",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hello, I am Slikey (Kevin Carstens), the Technical Director of Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "I want to give you a clear, honest overview of where Hytale modding stands today, what you can expect in the short term, and where we're taking this in the long run.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "This is not a polished marketing post. It's a status report from the people building the game and its tools, written for the people who want to build with us.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale gives you a lot of tools to express your creativity and in this post we want to cover the current status and future vision for scripting, programming, modelling and configuration.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "MISSION: MODDING AT THE CORE OF HYTALE",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We will always strive to create an immersive adventure for Hytale and continuously expand it in the future. The fortunate fact for modders is that we built the game with the tools that we deliver with the game. Our goal is that anything we do, you can do as well.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "As a modder, you will benefit not just from the tooling we used but also from the content we create to deliver the block game we have always craved for.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're building Hytale with modding at its core. Most of what you see in the game can be changed, extended, or removed entirely. Blocks, Items, NPCs, World Generation, UIs, systems, and behaviours are all driven by data and code that you can influence.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "In this post we will talk about the game “client” and the “server”. Usually “servers” are only relevant when joining multiplayer. Hytale is different - even when you join singleplayer, you join a local server that is just for yourself. So when we talk about servers, we mean both singleplayer and multiplayer.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "A few key principles guide us:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Server-side first:All modding in Hytale is based on the host of the server or host of the game. You should be able to join any modded Hytale server without downloading external mods or juggling client packs. Use any combination of plugins and asset packs to customize your gameplay experience or rely on a server to offer you an experience. You create a singleplayer save and select the mods you want to use for that savegame.One community, one client:We want to avoid a fragmented ecosystem where every server requires a different modded client. For that reason, we don't intend to support any client mods. The client should remain stable, secure, and consistent, while servers provide the creativity and variation.Modding for longevity:We are committing to modding for the long term. We believe modders like us have been looking for a project that doesn't just tolerate them but actively embraces and supports them.Empowering modders without exposing players:We want modders to benefit from their work and build a future they can rely on, with as much freedom as possible - without exposing players to the security and safety risks that exist on some other modding platforms.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "That's the standard we're holding ourselves to. We're not there yet - but that's the direction.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "TECHNICAL REALITY CHECK",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Now for the blunt part: we are behind where we want to be.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are missing years of development time that we now need to compress into months.There are gaps in our tools, our documentation, and the ways systems are exposed.Some features exist only because they were hacked together during prototyping and never polished.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We made a deliberate decision:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Ship access now instead of waiting for perfection.We chose to fix up what we reasonably could in the short time we've had with the project, and then open things up so you can start experimenting while we work toward the long-term modding vision.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What this means for you right now:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "You will run intolimitationsdue to missing editing capabilities.Certain aspects ofclient behaviour are not yet exposedto the server.Some tools and systems arerough, inconsistent, or painfulto work with.Modding maturity iswildly unevendepending on what you want to build.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We decided not to hide valuable features just because they're not up to our current standards. If something is useful to you, we'll try to make it available and iterate on it in public.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "You are absolutely encouraged to hold us accountable for that.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hold us responsible for this progress. Tag us, reach out, demand answers. We commit to being transparent and telling you the truth - even if the truth is \"this is not good enough yet\" or \"we don't know yet.\"Don't just take our word for it. Demand results. Give us feedback. Don't hold back.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Community and Communication",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "You don't have to figure this out alone. We're anchoring the creator community in a few core places:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Discord:Official Hytale,where you can talk directly with us and other modders. There are also other Discords with UGC (User-Generated Content) focus such asCurseForge. We may join other Discord communities and listen to you. Discord has been absolutely brilliant in supporting us on setting up the Hytale space.X / Reddit:Tweet at us or post on Hytale related subreddits. We can't reply to everything but we are actively scanning posts and comments to guide us. A lot of this post was based on exactly those questions.Documentation (GitBook, in progress):We are working on public creator documentation hosted on GitBook. This will start incomplete and uneven, but we'll expand it as we go and based on your questions.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "CURRENT STATE OF MODDING",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We're currently not satisfied with the state of modding in Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "However, we believe that holding access back until everything is perfect would be a disservice. If you join us now, you'll be part of shaping the ecosystem and you'll learn the concepts as they evolve, which will give you a deep understanding over time.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Four Major Content Categories",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Right now, Hytale modding largely falls into four technical categories:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Server Plugins - Java .jar filesExtend the functionality of the server programmatically.Extremely powerful and allows deep modifications to the gameplay experience and core server system.Use them to build minigames, economies, commands, custom logic, new asset type, and more.Data Assets - JSON filesDrive gameplay behaviour and define core content:Blocks, items, NPCsWorld generationDrop tables, loot, and more.Art Assets - Sounds, models, texturesProvide the visual and audio representation of game elements.We support Blockbench for creating Hytale models, textures, and animations.Save Files - Worlds and PrefabsShare whole worlds or specific builds.Prefabs are used in creative tools and world generation to place prebuilt structures like trees, houses, or large landmarks.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "WHY WE'RE NOT ADDING TEXT-BASED SCRIPTING",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "A common question: \"Where's Lua/scripting?\"",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Short answer:We do not have text-based scripting and we do not intend to add it.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Here's why:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Text-based scripting is usually introduced to \"help non-programmers\" like designers building custom behaviours.In reality, script languages like Lua are still programming languages:Programmers now have to juggle two languages, one of which usually feels \"nerfed\".Designers are still expected to learn actual programming concepts.In the end, it's less inclusive and increases complexity for both sides.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We see that as a false compromise.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our Direction: Visual Scripting",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Instead of text-based scripting, we will addvisual scripting:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our experience with Unreal Engine Blueprints showed us that:Designers feel genuinely empowered when they can build logic visually.Programmers are more productive when they stay in a programming language (Java/C#) and expose high-level nodes.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The goal:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Designers are empowered through a visual language that matches how they think about behaviours.Programmers can extend and optimize this system by adding new visual nodes and performance-sensitive implementations.We avoid fragmenting logic across multiple \"half-languages\".",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We believe this is the most empowering approach for modders without compromising on capabilities.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "TOOLING AVAILABLE TODAY",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We currently offer the following tools for creating Hytale assets:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale Asset EditorEditor for data assets.Supports most asset types, with notable limitations around NPCs, world generation, and interactions.This will expand over time.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Blockbench PluginCreate Hytale-compatible models, textures, and animations directly in Blockbench.Replaces our own modelling and animation tools used in the past to better support established creative workflows in the community.Intended for release as soon as possible",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Asset Graph EditorAn unfinished internal editor we used as a temporary solution for world generation, creative tool brushes, NPCs and hopefully more soon.It is not at the quality bar we want, but it's useful enough that we'd rather expose it and improve it than hide it.Currently working on releasing it aswell",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Machinima ToolsThe tool we used to create the trailer back in 2018They have some technical issues we will need to fix but they are usable and delivered great results for us.Creative ToolsAn interactive suite of tools to modify the world and express your creativity.Expect dedicated videos / blogs about themWe also released some footage of them being used in the pastAnd more..",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "You will feel the rough edges. That is expected at this stage, and we intend to fix them with your feedback.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "SHORT-TERM IMPROVEMENTS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "This is not a complete roadmap, but it covers the biggest short-term issues we see in terms of urgency and impact for modders.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Shared Source Server",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We know that the lack of documentation for assets and systems is causing serious friction. We feel the same pain internally.We commit to releasing theserver source codeas soon as we are legally able to. Expect this within 1-2 months after release.In the meantime the server is not obfuscated, so you can decompile it easily.This will let you:Inspect how systems work under the hood while documentation is catching up.Unblock yourself by reading the actual implementation, not guessing from trial and error.Contribute improvements and bug fixes back to us if something bothers you enough that you don't want to wait.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Asset Pack / Mod Distribution",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Because we're releasing the game at this early stage, we did not have time to design a polished, first-class distribution flow.For now, expect friction when:Bundling creations into clean, sharable packages.Managing dependencies between plugins, asset packs, and worlds.This is one of our top modding priorities. Expect quick iteration as we see how you actually try to ship and share your work.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Custom UIs",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Right now, our UI situation is messy:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are usingthreeUI frameworks at the same time.We are in the process of ripping out two of them and consolidating onNoesisGUI.Noesis Technologies has been extremely helpful to us, and we want to acknowledge their role in helping make Hytale happen.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What this means for you:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We already have asset-driven UIs, but they are incomplete and limited.You can start experimenting with them now.Tell us what you are trying to build and where you get blocked, and we will prioritize unblocking you.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Stability",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "This one is simple and painful:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "There are crashes.Some of them are severe and can causedata loss.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our stance:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are fixing crashes as they come in and you can expect rapid improvements.But right now, wecannot guarantee data integrity.You should assume youwillbe affected at some point.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Practical advice:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Take frequent backups of your savegames and important creations. We are currently setting up automatic solutions but we can not guarantee safety.Treat this phase as true early access: valuable, but not yet safe for irreplaceable work.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are genuinely sorry for any issues this causes you, and we are treating stability as our top priority.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "First-Party Server Network",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We plan to launch a first-party server network, operated by an internal team, that offers a selection of classic Hypixel Network-style minigames after launch but work has not started on this yet.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Why we're doing this",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Bring back familiar minigames:Offer experiences you already know from our previous work, rebuilt for Hytale, as well as original new minigames unlocked by Hytale's capabilities.Dogfood our own systems:Use the same tools and workflows available to you so we can validate and improve minigame creation, live ops, and server management in real conditions.Gather real-world data:Observe how Hytale servers behave at scale so we can optimize performance, reduce hosting requirements, and drive costs down for everyone.Share what we learn:Partially or fully release the code and assets from our minigames so you can study how we build things, reuse components, and adopt best practices.De-risk Hytale's early days:Ensure there is a strong, reliable network of playable content even if community infrastructure takes time to ramp up. Our network's job is to pave the way until we can hand the torch over to you.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What we're not trying to do",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're not trying to outcompete you:The goal is not to dominate the server landscape or undercut modders and server owners.We're not diluting adventure development:This work is done by a dedicated team and does not reduce our focus or investment in Adventure mode.We're not using it to ignore feedback:We won't bias our roadmap around our own servers at the expense of the wider creator ecosystem or player needs.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Ultimately, our incentive is to grow a broad ecosystem with many successful servers and a wide variety of experiences. We do not benefit from having a monopoly inside our own game.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "LONG-TERM VISION FOR MODDERS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "In the long term, our goal is to provide a comprehensive suite of tools and services that allow you to flourish in Hytale, regardless of your starting point.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We want:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "New Modders to enter game creation without needing expensive software or years of experience.Experienced modders to build complex systems, businesses, and communities on top of Hytale.Hytale to blur the line between \"playing games\" and \"creating games\".",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Shared Source Server & Bounties",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Beyond simply releasing the server source:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We plan to opendevelopment bountiesfor specific improvements and features.This will take time to set up properly, but the goal is to reward contributions that strengthen the ecosystem.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Node Editor",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Some asset types are currently painful to configure in raw JSON, such as:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "NPCsInteractionsWorld generation",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We've been using internal tools to make this manageable. Our plan:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Release node-graph-style editors for these asset types.Integrate these node editors directly into the Hytale Asset Editor, so you have a unified creator suite instead of a patchwork of tools.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "concept vision for the future of the node editor",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Visual Scripting",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Visual scripting is a core pillar of our long-term vision:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Java plugins will continue to exist and are extremely powerful - but they require programming skills and come with safety concerns.Visual scripting will:Provide asandboxed, safe environment for sharing logic.Offergreat learnability and modifiabilityfor modders of all skill levels.Allow programmers to extend it with performance-critical nodes.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Over time, we want to:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Bring visual scripting directly into the3D world:Link levers, doors, spawners, triggers, and other elements in-game.Build intricate adventure maps and encounters directly inside Hytale.Take inspiration from systems like DOOM SnapMap while keeping it fully integrated with our asset and scripting stack.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "CLOSING WORDS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We are, very deliberately, in \"early access\" for modders.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The tools are uneven.The documentation is incomplete.Some workflows feel great, others are frustrating.There are crashes, and you will lose work if you don't back up.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're not pretending otherwise.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "At the same time:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "These are the tools we used to build Hytale itself.In many cases, we were building tools and content in parallel, with modding in mind.We know this approach works, because it already produced the game you're seeing.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our commitment to you:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We will keep improving the modding experience, step by step.We will focus on learnability, onboarding, and the ability to \"ramp up\" from beginner to expert.We will be transparent about what's ready, what's not, and what we're prioritizing next.And we will listen when you tell us where it hurts.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "If you're willing to join us in this phase - bugs, rough edges and all - you won't just be modding Hytale. You'll be shaping what Hytale modding becomes.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "I know there are a lot of details missing and you probably have more questions than before. I will be on our Hytale Discord server chat (Modding / Creative > #discussion) on Saturday, 22nd November 2025 at 12pm EST / 5pm GMT to answer your questions for a full hour and reply to as many questions as I can.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "See you in your version of Orbis,",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      }
+    ],
+    "translated": [
+      {
+        "type": "text",
+        "content": "Стратегия и статус моддинга Hytale",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "text",
+        "content": "Стратегия и статус моддинга Hytale",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Здравствуйте, я Слайки (Кевин Карстенс), технический директор Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Я хочу дать вам четкий и честный обзор того, где сейчас находится моддинг Hytale, чего вы можете ожидать в краткосрочной перспективе и чего мы достигнем в долгосрочной перспективе.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Это не отточенный маркетинговый пост. Это отчет о состоянии игры от людей, создающих игру и ее инструменты, написанный для людей, которые хотят создавать игру вместе с нами.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale предоставляет вам множество инструментов для выражения вашего творчества, и в этом посте мы хотим рассказать о текущем состоянии и будущем видении сценариев, программирования, моделирования и настройки.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "МИССИЯ: МОДДИНГ В ОСНОВЕ HYTALE",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы всегда будем стремиться создать захватывающее приключение для Hytale и постоянно расширять его в будущем. Удачным фактом для моддеров является то, что мы создали игру с помощью инструментов, которые мы поставляем вместе с игрой. Наша цель состоит в том, чтобы все, что мы делаем, могли сделать и вы.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Как моддер, вы получите выгоду не только от инструментов, которые мы использовали, но и от контента, который мы создаем для создания блочной игры, о которой мы всегда жаждали.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы создаем Hytale, в основе которого лежит моддинг. Большую часть того, что вы видите в игре, можно изменить, расширить или полностью удалить. Блоки, предметы, неигровые персонажи, генерация мира, пользовательские интерфейсы, системы и поведение — все это управляется данными и кодом, на которые вы можете влиять.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В этом посте мы поговорим об игре «клиент» и «сервер». Обычно «серверы» актуальны только при присоединении к мультиплееру. В Hytale все по-другому: даже когда вы присоединяетесь к одиночной игре, вы присоединяетесь к локальному серверу, предназначенному только для вас. Поэтому, когда мы говорим о серверах, мы имеем в виду как одиночную, так и многопользовательскую игру.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы руководствуемся несколькими ключевыми принципами:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В первую очередь на стороне сервера: Все модификации в Hytale основаны на хосте сервера или хосте игры. Вы сможете присоединиться к любому модифицированному серверу Hytale, не загружая внешние моды и не манипулируя клиентскими пакетами. Используйте любую комбинацию плагинов и пакетов ресурсов, чтобы персонализировать игровой процесс, или положитесь на сервер, который предложит вам новые впечатления. Вы создаете сохранение для одиночной игры и выбираете моды, которые хотите использовать для этого сохранения. Одно сообщество, один клиент. Мы хотим избежать фрагментированной экосистемы, в которой для каждого сервера требуется отдельный модифицированный клиент. По этой причине мы не намерены поддерживать какие-либо клиентские моды. Клиент должен оставаться стабильным, безопасным и последовательным, в то время как серверы обеспечивают креативность и разнообразие. Модификация для долговечности: Мы обязуемся заниматься моддингом в долгосрочной перспективе. Мы считаем, что такие моддеры, как мы, искали проект, который не просто терпит их, но активно принимает и поддерживает их. Расширение прав и возможностей моддеров, не разоблачая игроков: Мы хотим, чтобы моддеры извлекали выгоду из своей работы и строили будущее, на которое они могут положиться, с как можно большей свободой - не подвергая игроков рискам безопасности, которые существуют на некоторых других платформах для моддинга.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Это стандарт, которого мы придерживаемся. Мы еще не там - но это направление.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ПРОВЕРКА ТЕХНИЧЕСКОЙ РЕАЛЬНОСТИ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Теперь самое прямое: мы отстаем от того, чего хотим.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Нам не хватает лет времени разработки, которое теперь нужно сжать до месяцев. В наших инструментах, документации и способах представления систем есть пробелы. Некоторые функции существуют только потому, что они были объединены во время прототипирования и никогда не доводились до совершенства.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы приняли взвешенное решение:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Доступ к выпуску сейчас, вместо того, чтобы ждать совершенства. Мы решили исправить то, что могли, за то короткое время, что у нас было с проектом, а затем открыть все, чтобы вы могли начать экспериментировать, пока мы работаем над долгосрочным видением моддинга.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Что это значит для вас прямо сейчас:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Вы столкнетесь с ограничениями из-за отсутствия возможностей редактирования. Некоторые аспекты поведения клиента еще не доступны серверу. Некоторые инструменты и системы грубы, непоследовательны или болезненны в работе. Зрелость моддинга совершенно неравномерна и зависит от того, что вы хотите создать.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы решили не скрывать ценные функции только потому, что они не соответствуют нашим текущим стандартам. Если что-то окажется для вас полезным, мы постараемся сделать это доступным и поработать над этим публично.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Вам абсолютно рекомендуется привлечь нас к ответственности за это.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Возложите на нас ответственность за этот прогресс. Отмечайте нас, обращайтесь, требуйте ответов. Мы обязуемся быть прозрачными и говорить вам правду, даже если правда заключается в том, что «это еще недостаточно хорошо» или «мы еще не знаем». Не верьте нам на слово. Требуйте результатов. Дайте нам обратную связь. Не сдерживайся.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Сообщество и общение",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Вам не обязательно разбираться в этом в одиночку. Мы закрепляем сообщество авторов в нескольких основных местах:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Discord:Официальный Hytale, где вы можете напрямую общаться с нами и другими моддерами. Существуют также другие Discord с акцентом на UGC (пользовательский контент), например CurseForge. Мы можем присоединиться к другим сообществам Discord и слушать вас. Discord великолепно поддержал нас в создании пространства Hytale. X / Reddit: Напишите нам в Твиттере или опубликуйте сообщение в субреддитах, посвященных Hytale. Мы не можем ответить на все, но мы активно сканируем сообщения и комментарии, которые помогут нам. Большая часть этого поста основана именно на этих вопросах. Документация (GitBook, в разработке): Мы работаем над общедоступной документацией для авторов, размещенной на GitBook. Сначала это будет неполно и неравномерно, но мы будем расширять его по мере продвижения и на основе ваших вопросов.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ТЕКУЩЕЕ СОСТОЯНИЕ МОДДИНГА",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "В настоящее время мы не удовлетворены состоянием моддинга в Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Однако мы считаем, что приостановка доступа до тех пор, пока все не будет идеально, будет медвежьей услугой. Если вы присоединитесь к нам сейчас, вы станете частью формирования экосистемы и будете изучать концепции по мере их развития, что со временем даст вам глубокое понимание.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Четыре основные категории контента",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "На данный момент моддинг Hytale в основном делится на четыре технические категории:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Плагины сервера — файлы Java .jar. Программно расширяют функциональность сервера. Чрезвычайно мощный и позволяет глубоко вносить изменения в игровой процесс и основную серверную систему. Используйте их для создания мини-игр, экономики, команд, пользовательской логики, новых типов активов и многого другого. звуковое представление элементов игры. Мы поддерживаем Blockbench для создания моделей, текстур и анимации Hytale. Сохранение файлов — миры и префабы. Делитесь целыми мирами или конкретными сборками. Префабы используются в творческих инструментах и ​​генерации мира для размещения заранее построенных структур, таких как деревья, дома или крупные достопримечательности.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ПОЧЕМУ МЫ НЕ ДОБАВЛЯЕМ ТЕКСТОВЫЕ СЦЕНАРИИ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Распространенный вопрос: «Где Lua/скрипты?»",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Краткий ответ: У нас нет текстовых сценариев и мы не собираемся их добавлять.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Вот почему:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Текстовые сценарии обычно вводятся, чтобы «помочь непрограммистам», например, дизайнерам, в создании индивидуального поведения. На самом деле языки сценариев, такие как Lua, по-прежнему остаются языками программирования: программистам теперь приходится жонглировать двумя языками, один из которых обычно кажется «нерфленным». От дизайнеров по-прежнему ожидается изучение реальных концепций программирования. В конце концов, он менее инклюзивный и увеличивает сложность для обеих сторон.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы рассматриваем это как ложный компромисс.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Наше направление: Визуальные сценарии",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Вместо текстовых сценариев мы добавим визуальные сценарии:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Наш опыт работы с Unreal Engine Blueprints показал нам, что: Дизайнеры чувствуют себя по-настоящему уполномоченными, когда они могут создавать логику визуально. Программисты работают более продуктивно, когда они остаются на языке программирования (Java/C#) и предоставляют узлы высокого уровня.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Цель:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Дизайнеры получают возможности благодаря визуальному языку, который соответствует их представлениям о поведении. Программисты могут расширять и оптимизировать эту систему, добавляя новые визуальные узлы и реализации, чувствительные к производительности. Мы избегаем фрагментации логики на нескольких «полуязыках».",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы считаем, что это наиболее расширяющий возможности моддеров без ущерба для возможностей.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ИНСТРУМЕНТЫ ДОСТУПНЫ СЕГОДНЯ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "В настоящее время мы предлагаем следующие инструменты для создания ресурсов Hytale:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale Asset EditorРедактор для информационных ресурсов. Поддерживает большинство типов активов с заметными ограничениями, касающимися неигровых персонажей, генерации мира и взаимодействия. Со временем эта функция будет расширяться.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Плагин BlockbenchСоздавайте модели, текстуры и анимацию, совместимые с Hytale, непосредственно в Blockbench. Заменяет наши собственные инструменты моделирования и анимации, используемые в прошлом, для лучшей поддержки устоявшихся творческих рабочих процессов в сообществе. Предназначен для выпуска как можно скорее.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Редактор графиков активовНезаконченный внутренний редактор, который мы использовали в качестве временного решения для создания мира, творческих кистей инструментов, неигровых персонажей и, надеюсь, в ближайшее время. Он не на том уровне качества, который нам нужен, но он достаточно полезен, поэтому мы предпочитаем раскрывать его и улучшать, а не скрывать. В настоящее время мы также работаем над его выпуском.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Инструменты MachinimaИнструмент, который мы использовали для создания трейлера еще в 2018 году. У них есть некоторые технические проблемы, которые нам нужно исправить, но они пригодны для использования и дают нам отличные результаты. Креативные инструментыИнтерактивный набор инструментов для изменения мира и выражения вашего творчества. Ожидайте специальные видеоролики / блоги о них. Мы также опубликовали несколько видеороликов о том, как они использовались в прошломИ многое другое..",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Вы почувствуете острые углы. Это ожидается на данном этапе, и мы намерены исправить это с помощью ваших отзывов.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "КРАТКОСРОЧНЫЕ УЛУЧШЕНИЯ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Это не полная дорожная карта, но она охватывает самые большие краткосрочные проблемы, которые мы видим, с точки зрения срочности и воздействия на моддеров.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Общий исходный сервер",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы знаем, что отсутствие документации по активам и системам вызывает серьезные разногласия. Мы чувствуем ту же боль внутри себя. Мы обязуемся опубликовать исходный код сервера, как только у нас появится на это законная возможность. Ожидайте этого в течение 1-2 месяцев после выпуска. В то же время сервер не запутан, поэтому вы можете легко его декомпилировать. Это позволит вам: Проверять, как системы работают под капотом, пока документация дорабатывается. Разблокировать себя, прочитав фактическую реализацию, а не гадать методом проб и ошибок. Если что-то беспокоит вас настолько, что вы не хотите ждать, вносите свой вклад в улучшения и исправления ошибок.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Распространение пакетов ресурсов/модов",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Поскольку мы выпускаем игру на этой ранней стадии, у нас не было времени разработать отточенный, первоклассный процесс распространения. На данный момент ожидайте разногласий, когда: Объединение творений в чистые, доступные для совместного использования пакеты. Управление зависимостями между плагинами, пакетами ресурсов и мирами. Это один из наших главных приоритетов в моддинге. Ожидайте быстрой итерации, когда мы увидим, как вы на самом деле пытаетесь отправить свою работу и поделиться ею.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Пользовательские интерфейсы",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Сейчас ситуация с нашим пользовательским интерфейсом запутанная:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы используем три фреймворка пользовательского интерфейса одновременно. Мы находимся в процессе удаления двух из них и объединения NoesisGUI. Noesis Technologies оказали нам чрезвычайно большую помощь, и мы хотим признать их роль в создании Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Что это значит для вас:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "У нас уже есть пользовательские интерфейсы, управляемые активами, но они неполны и ограничены. Вы можете начать экспериментировать с ними прямо сейчас. Расскажите нам, что вы пытаетесь создать и где вас блокируют, и мы расставим приоритеты в разблокировке вас.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Стабильность",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Это просто и болезненно:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Бывают сбои. Некоторые из них серьезны и могут привести к потере данных.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Наша позиция:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы исправляем сбои по мере их поступления, и вы можете ожидать быстрых улучшений. Но сейчас мы не можем гарантировать целостность данных. Вы должны предположить, что в какой-то момент это повлияет на вас.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Практические советы:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Регулярно делайте резервные копии своих сохраненных игр и важных творений. В настоящее время мы настраиваем автоматические решения, но не можем гарантировать безопасность. Относитесь к этому этапу как к настоящему раннему доступу: ценному, но пока небезопасному для незаменимой работы.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Нам искренне жаль, что это вызвало у вас проблемы, и мы считаем стабильность нашим главным приоритетом.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Собственная серверная сеть",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы планируем запустить собственную серверную сеть, управляемую внутренней командой, которая после запуска предложит подборку классических мини-игр в стиле Hypixel Network, но работа над этим еще не началась.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Почему мы это делаем",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Верните знакомые мини-игры: предложите опыт, который вы уже знаете из нашей предыдущей работы, переработанной для Hytale, а также оригинальные новые мини-игры, открытые благодаря возможностям Hytale. Тестирование наших собственных систем: используйте те же доступные вам инструменты и рабочие процессы, чтобы мы могли проверять и улучшать создание мини-игр, живые операции и управление серверами в реальных условиях. Собирайте реальные данные: наблюдайте, как серверы Hytale ведут себя в масштабе, чтобы мы могли оптимизировать производительность, снизить требования к хостингу и снизить затраты на Всем. Поделитесь тем, что мы узнали: Частично или полностью выпустите код и ресурсы из наших мини-игр, чтобы вы могли изучить, как мы создаем вещи, повторно используем компоненты и внедряем лучшие практики. Избавьтесь от рисков в первые дни Hytale: Обеспечьте наличие сильной и надежной сети игрового контента, даже если инфраструктуре сообщества требуется время для развития. Задача нашей сети — проложить путь до тех пор, пока мы не сможем передать эстафету вам.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Чего мы не пытаемся сделать",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы не пытаемся превзойти вас: цель состоит не в том, чтобы доминировать на сервере или подрывать позиции моддеров и владельцев серверов. Мы не ослабляем разработку приключений: эта работа выполняется специальной командой и не уменьшает наше внимание или инвестиции в режим приключений. Мы не используем ее для игнорирования отзывов: мы не будем смещать нашу дорожную карту в сторону наших собственных серверов в ущерб более широкой экосистеме создателей или потребностям игроков.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В конечном счете, нашим стимулом является создание обширной экосистемы со множеством успешных серверов и разнообразным опытом. Нам не выгодно иметь монополию внутри нашей собственной игры.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ДОЛГОСРОЧНОЕ ВИДЕНИЕ ДЛЯ МОДДЕРОВ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "В долгосрочной перспективе наша цель — предоставить комплексный набор инструментов и услуг, которые позволят вам процветать в Hytale, независимо от вашей отправной точки.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы хотим:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Новые моддеры могут заняться созданием игр без необходимости дорогостоящего программного обеспечения или многолетнего опыта. Опытные моддеры создают сложные системы, предприятия и сообщества на основе Hytale. Hytale стирает грань между «играть в игры» и «создавать игры».",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Сервер с общим исходным кодом и вознаграждения",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Помимо простого выпуска исходного кода сервера:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы планируем открыть вознаграждения за разработку конкретных улучшений и функций. Для правильной настройки потребуется время, но цель состоит в том, чтобы вознаграждать вклады, которые укрепляют экосистему.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Редактор узлов",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Некоторые типы активов в настоящее время сложно настраивать в необработанном формате JSON, например:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "NPCВзаимодействияГенерация мира",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы использовали внутренние инструменты, чтобы сделать это управляемым. Наш план:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Выпустите редакторы в стиле графов узлов для этих типов активов. Интегрируйте эти редакторы узлов непосредственно в редактор активов Hytale, чтобы у вас был единый набор инструментов для создания, а не набор инструментов.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "концептуальное видение будущего редактора узлов",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Визуальные сценарии",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Визуальные сценарии — это основа нашего долгосрочного видения:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Плагины Java будут продолжать существовать и будут чрезвычайно мощными, но они требуют навыков программирования и сопряжены с проблемами безопасности. Визуальные сценарии будут: Обеспечивать изолированную, безопасную среду для совместного использования логики. Предлагать отличную обучаемость и возможность модификации для моддеров всех уровней квалификации. Позволить программистам расширять его с помощью узлов, критичных к производительности.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Со временем мы хотим:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Перенесите визуальные сценарии непосредственно в трехмерный мир: свяжите рычаги, двери, генераторы, триггеры и другие элементы в игре. Создавайте сложные карты приключений и встреч прямо внутри Hytale. Черпайте вдохновение из таких систем, как DOOM SnapMap, сохраняя при этом полную интеграцию с нашим набором ресурсов и сценариев.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ЗАКЛЮЧИТЕЛЬНЫЕ СЛОВА",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы сознательно находимся в «раннем доступе» для моддеров.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Инструменты неровные. Документация неполная. Некоторые рабочие процессы работают отлично, другие разочаровывают. Бывают сбои, и вы потеряете работу, если не выполните резервное копирование.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы не претендуем на обратное.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В то же время:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Это инструменты, которые мы использовали для создания самой Hytale. Во многих случаях мы создавали инструменты и контент параллельно, имея в виду моддинг. Мы знаем, что этот подход работает, потому что он уже создал игру, которую вы видите.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Наши обязательства перед вами:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы продолжим улучшать процесс моддинга, шаг за шагом. Мы сосредоточимся на обучаемости, адаптации и способности «нарастать» от новичка до эксперта. Мы будем откровенны в отношении того, что готово, а что нет и что мы расставляем в приоритете дальше. И мы выслушаем, когда вы скажете нам, что у вас болит.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Если вы готовы присоединиться к нам на этом этапе — ошибки, неровности и все такое — вы не будете просто модифицировать Hytale. Вы будете формировать то, чем станет моддинг Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Я знаю, что не хватает многих деталей, и у вас, вероятно, появилось больше вопросов, чем раньше. Я буду в нашем чате сервера Hytale Discord (Моддинг / Креатив > #discussion) в субботу, 22 ноября 2025 г., в 12:00 по восточному стандартному времени / 17:00 по Гринвичу, чтобы в течение целого часа отвечать на ваши вопросы и отвечать на как можно больше вопросов.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "До встречи в вашей версии Орбиса,",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      }
+    ]
+  },
+  "https://hytale.com/news/2025/11/hytale-is-saved": {
+    "blocks": [
+      {
+        "type": "text",
+        "content": "HYTALE IS SAVED!",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "text",
+        "content": "A new and exciting chapter for Hytale begins today.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are thrilled to announce that we have acquired Hytale from Riot Games. While it didn't make sense for them to continue developing it in its existing form, they ultimately wanted what's best for players, and that's for us to eventually play a revised version of the game. We are grateful to Riot Games for making this possible.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Over the past few weeks, we have rehired more than 30 developers who know this game inside and out, with additional returns expected in the coming days. Together, we are going back to the original vision for Hytale. We are fully independent and personally committed to funding Hytale for the next 10 years.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Transactions like this are rare in the games industry. Thank you to everyone for keeping hope alive.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale is saved.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Simon Collins-LaflammeFounder, Hypixel",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Early access date:To be announced in the coming daysPlatform:Windows at launch, Linux / Mac will be attempted, other platforms much laterPricing:Details to be announced in the coming daysEarly access state:Expect bugs, rough edges, unbalanced content, and frequent updates that break thingsEarly access duration:Expected to last at least a few years; no rush to \"1.0\"Launch content:Exploration Mode, Creative Mode, and ModdingNot at launch:Minigames and Adventure Mode (both come later; dedicated team for minigames)Ownership:We own 100% of Hytale (repurchased from Riot Games)Funding:10-year personal funding commitment; no investors or publishersGame build:Using the previous engine from the trailer, enabling faster development and immediate playabilityModding:Available at launch. Run your own servers and create custom content.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "HOW WE GOT HERE",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "On June 23, 2025, it was announced that the development of Hytale was ending and Hypixel Studios would wind down.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "When we saw the community's reaction, we knew we had to act. Although we hadn't been involved with Hytale since 2020, Hytale and its community have always been something we cherished.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We made an offer to Riot Games without seeing the full state of the project. Knowing the massive risks involved, we dove in headfirst. No risk, no Hytale. We negotiated the deal, rehired 30 developers, secured funding, and made the call to return to the legacy engine and original vision.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "WHY WE DID THIS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We're focused on building the game we always wanted to play, and one that we'd be proud for our kids to play, too. Philippe and I are personally committing funding for the next 10 years. This is our passion project, and we're here to make it last.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "START SMALL, GROW WITH COMMUNITY",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We expect our roadmap to evolve as we learn more about the game's needs and how players respond. It's already changing: what we have today is different from what we had a few weeks ago, as we have been exploring the game. We'll keep it agile and flexible and try our best to avoid promises we can't keep.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're choosing to focus on making a great game first, rather than a perfect engine. We know the risk of releasing an unfinished product. First impressions matter, and it's hard to change minds. But this is a risk we must take. We need your help creating content, reporting bugs, giving feedback, and building this with us.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "No risk, no Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our initial priority is polishing the living world, modding, core mechanics, and sandbox experience. Once the world feels alive and systems are stable, we'll shift hard into Adventure Mode and Minigames development to create the true Hytale experience.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "THE CURRENT STATE OF THE GAME",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Let's discuss openly what we've inherited and what we're working with. The biggest thing to note is there were two engines in development. The Legacy Engine (C#/Java PC-only) that was quite advanced from three to four years ago. This is what was used in the trailer and most blog posts. And a Cross-platform Engine (C++) that's been in development for approximately three years.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The Cross-platform Engine is significantly behind in terms of gameplay. It would require extensive refactoring to be production-ready, with minimal gameplay features. We estimate it would take two years before we could consider early access with it.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We've made the decision to abandon the Cross-platform Engine and return to the Legacy Engine. It's playable now. It lets us build a game rather than an engine. It's the version that feels like what Hytale was supposed to be.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "As for the Legacy Engine, we have plans to make it cross-platform later. We are in no rush.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "In the game itself, we have over 100 NPCs, thousands of items and blocks, but many aren't properly configured yet. Expect unbalanced loot, rough edges, and bugs. This is genuine early access. Please report issues and give feedback.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Official minigames will not be available on early access launch. We know these were a big part of the original Hytale vision, but the infrastructure and minigames are far from ready. We have a dedicated team that will focus on bringing minigames once the core game is stable. We have extensive experience in this.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "In the meantime, the community can start making their own minigames, custom servers, and experiences. When we launch our own, we'll share our assets and support the community. Ideally, the community becomes better at making minigames than we are!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're a small, dedicated team by design. Scaling too fast creates new problems. The cost of staying small is that we can't balance and finish everything in a few weeks. The benefit is that we can move quickly, make decisions efficiently, and avoid the bureaucracy that kills momentum.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "In the past few days, we've made solid progress toward launching early access. As we move into full production mode, as we complete the transfer of Hytale, you'll see accelerated development in the coming weeks.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We'll release detailed patch notes in the coming days so you can see the full scope of improvements.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "OUR TEAM",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Leadership is critical to our success. Here's who's leading Hytale:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Simon Collins-Laflamme (Co-founder):Directly involved daily, shaping vision and ensuring the long-term health of the game and community. Co-funding in the project.Philippe Touchette (Co-founder):Co-funding, overseeing financial responsibility, and helping structure the finances for the acquisition.Kevin Carstens (Technical Lead):Leading all technical development since day one with deep knowledge of every layer of the game.Patrick Derbic (Management Lead):Handling studio operations, team coordination, and ensuring efficient execution.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We've rehired over 30 former developers who previously worked on Hytale. These are people who know the codebase, understand the vision, and choose to come back. We'll continue to hire as the budget allows and as we find the right candidates.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're seeking hard-working, self-motivated individuals who want to be part of something meaningful.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "MODDING: CRITICAL TO SURVIVAL",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Modding is once again a top priority. It has always been at the core of our vision, and it's critical to our long-term survival. We will launch early access with as many modding tools and as much access as possible, within legal and security constraints.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What you can expect:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "It's possible to mod almost everything in Hytale (content and server-side)Non-developers can create impressive experiences with minimal technical knowledgeA few guides or videos will be enough for most people to start creatingWe will provide server source code access within several months, once we're legally ready to do soDedicated server support and data-driven content configurationWe're being mindful of backward compatibility as we iterateYou can create your own custom servers, maps, adventures, etcMore details will be given in a future blog post",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Modding isn't just a feature for us. It's the foundation of longevity. We're committing to this completely.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "WHAT THIS MEANS FOR YOU",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We need your help to complete Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Play early access (even when it's rough)Report bugs and give honest feedbackCreate mods and contentBe patient when things break and trust the long-term visionMake guides and share knowledge with others",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "This is not a polished product. This is a raw, unfinished, sometimes broken experience with incredible potential. You'll find placeholder content, unbalanced systems, and frustrating bugs. You'll also find moments of magic, systems that click perfectly, and glimpses of what this could become.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Early access is our way of earning your trust, not asking for it.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "WHERE TO FIND US",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Discord is where the action is for Hytale. Major announcements go to all platforms, but Discord is where the community lives and our developers are most active.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Click here to join us.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're setting up channels for modding, map-making, bug reports, feedback, tutorials, and community events.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "All major announcements will also go to X, Instagram, Reddit, and others.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "MOVING FORWARD",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We're releasing features and iterating on them later. Many features will be in their own \"Version 1\": functional but early stage. We're focused on getting core systems working together rather than perfecting each one in isolation. Expect very frequent updates. Moving fast means things might break more often. Saves could be affected. Systems might change. That is the trade-off of speed.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're committing to transparent communication with patch notes and development updates.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Ten years of runway gives us time to get it right. We're building something that lasts.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "COMING IN THE NEXT FEW DAYS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Gameplay footage and screenshots (unpolished, as-is)Detailed patch notes from our recent workModding capabilities and roadmap blog postPricing details for different editionsPlenty of updates and communicationEarly Access Release Date",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "FINAL THOUGHTS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale has had a long and challenging journey. It's taken longer than anyone hoped, and it's changed a lot along the way.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "But here we are: starting over with a 4-year-old build, a small dedicated team, a community that refused to give up, and a vision that's aligned with a new reality.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "This is not going to be easy. This is not going to be fast. This is not going to be perfect.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "But it's going to be ours. Built together: one feature at a time, one bug fix at a time, one mod at a time.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale lives. Thank you.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "From the entire Hytale team.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "To download a .zip containing the clips featured in this blogpost,click here!",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      }
+    ],
+    "translated": [
+      {
+        "type": "text",
+        "content": "ХАЙТЕЙЛ СОХРАНЕН!",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "text",
+        "content": "Сегодня начинается новая захватывающая глава Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы рады сообщить, что приобрели Hytale у Riot Games. Хотя для них не имело смысла продолжать разработку игры в ее существующей форме, в конечном итоге они хотели лучшего для игроков, а именно, чтобы мы в конечном итоге играли в исправленную версию игры. Мы благодарны Riot Games за то, что это стало возможным.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "За последние несколько недель мы повторно наняли более 30 разработчиков, которые знают эту игру вдоль и поперек, и в ближайшие дни ожидается дополнительный доход. Вместе мы возвращаемся к первоначальному видению Hytale. Мы полностью независимы и лично привержены финансированию Hytale в течение следующих 10 лет.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Подобные транзакции редки в игровой индустрии. Спасибо всем за то, что сохранили надежду.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Хайтейл спасен.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Саймон Коллинз-Лафламм, основатель Hypixel",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Дата раннего доступа: будет объявлена ​​в ближайшие дни. Платформа: Windows при запуске, Linux / Mac будут опробованы, другие платформы — намного позже. Цены: Подробности будут объявлены в ближайшие дни. Состояние раннего доступа: ожидайте ошибок, неровностей, несбалансированного контента и частых обновлений, которые что-то ломают. Продолжительность раннего доступа: ожидается, что он продлится как минимум несколько лет; не спешите с версией 1.0. Запуск контента: режим исследования, творческий режим и моддинг. Не при запуске: мини-игры и режим приключений (оба появятся позже; специальная команда для мини-игр). Право собственности: мы владеем 100% Hytale (выкуплено у Riot Games). Финансирование: 10-летнее обязательство по личному финансированию; нет инвесторов и издателей. Сборка игры: использование предыдущего движка из трейлера, что обеспечивает более быструю разработку и немедленную играбельность. Моддинг: доступен при запуске. Запускайте свои собственные серверы и создавайте собственный контент.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "КАК МЫ ДОБРАЛИСЬ ЗДЕСЬ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "23 июня 2025 года было объявлено, что разработка Hytale завершается и Hypixel Studios прекращает работу.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Когда мы увидели реакцию сообщества, мы поняли, что нужно действовать. Хотя мы не сотрудничали с Hytale с 2020 года, Hytale и ее сообщество всегда были для нас чем-то дорогим.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы сделали предложение Riot Games, не видя полного состояния проекта. Зная о огромных рисках, мы ринулись вперед с головой. Нет риска, нет Hytale. Мы заключили сделку, повторно наняли 30 разработчиков, обеспечили финансирование и призвали вернуться к устаревшему движку и первоначальному видению.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ПОЧЕМУ МЫ ЭТО СДЕЛАЛИ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы сосредоточены на создании игры, в которую всегда хотели играть, и той, в которую мы бы гордились, если бы в нее играли и наши дети. Филипп и я лично выделяем финансирование на следующие 10 лет. Это наш проект, и мы здесь, чтобы продлить его.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "НАЧИНАЙТЕ С МАЛОГО, РАСТИ ВМЕСТЕ С СООБЩЕСТВОМ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы ожидаем, что наша дорожная карта будет меняться по мере того, как мы узнаем больше о потребностях игры и о том, как на них реагируют игроки. Это уже меняется: то, что мы имеем сегодня, отличается от того, что было несколько недель назад, когда мы изучали игру. Мы сохраним его гибкость и гибкость и сделаем все возможное, чтобы избежать обещаний, которые мы не сможем выполнить.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы решили сосредоточиться на создании отличной игры, а не на идеальном движке. Мы знаем, чем рискуем выпустить незаконченный продукт. Первое впечатление имеет значение, и изменить мнение сложно. Но это риск, на который мы должны пойти. Нам нужна ваша помощь в создании контента, сообщении об ошибках, отзывах и создании этого вместе с нами.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Нет риска, нет Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Нашим первоначальным приоритетом является доработка живого мира, моддинга, базовой механики и опыта песочницы. Как только мир почувствует себя живым и системы станут стабильными, мы перейдем к режиму приключений и разработке мини-игр, чтобы создать настоящий опыт Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ТЕКУЩЕЕ СОСТОЯНИЕ ИГРЫ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Давайте открыто обсудим, что мы унаследовали и над чем работаем. Самое главное, что следует отметить, это то, что в разработке находились два двигателя. Legacy Engine (только C#/Java для ПК), который три-четыре года назад был довольно продвинутым. Это то, что использовалось в трейлере и большинстве сообщений в блоге. И кросс-платформенный движок (C++), который находится в разработке около трех лет.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Кроссплатформенный движок существенно отстает в плане игрового процесса. Чтобы быть готовым к производству, потребуется обширный рефакторинг с минимальными функциями игрового процесса. По нашим оценкам, пройдет два года, прежде чем мы сможем рассмотреть возможность раннего доступа к нему.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы приняли решение отказаться от кроссплатформенного движка и вернуться к устаревшему движку. Теперь это играбельно. Это позволяет нам создавать игру, а не движок. Эта версия похожа на то, чем должен был быть Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Что касается Legacy Engine, у нас есть планы сделать его кроссплатформенным позже. Мы никуда не торопимся.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В самой игре более 100 NPC, тысячи предметов и блоков, но многие из них еще не настроены должным образом. Ожидайте несбалансированного лута, острых углов и ошибок. Это настоящий ранний доступ. Сообщайте о проблемах и оставляйте отзывы.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Официальные мини-игры не будут доступны при запуске раннего доступа. Мы знаем, что это была большая часть оригинального видения Hytale, но инфраструктура и мини-игры еще далеки от готовности. У нас есть специальная команда, которая сосредоточится на создании мини-игр, как только основная игра станет стабильной. У нас есть большой опыт в этом.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Тем временем сообщество может начать создавать свои собственные мини-игры, собственные серверы и развлечения. Когда мы запустим свой собственный, мы поделимся нашими активами и поддержим сообщество. В идеале сообщество станет лучше создавать мини-игры, чем мы!",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы — небольшая, преданная своему делу команда. Слишком быстрое масштабирование создает новые проблемы. Цена за то, чтобы оставаться небольшими, заключается в том, что мы не можем сбалансировать и закончить все за несколько недель. Преимущество состоит в том, что мы можем действовать быстро, эффективно принимать решения и избегать бюрократии, которая сбивает импульс.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "За последние несколько дней мы добились значительного прогресса в запуске раннего доступа. Когда мы перейдем в полноценный производственный режим и завершим передачу Hytale, в ближайшие недели вы увидите ускорение разработки.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В ближайшие дни мы опубликуем подробные примечания к патчу, чтобы вы могли увидеть весь спектр улучшений.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "НАША КОМАНДА",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Лидерство имеет решающее значение для нашего успеха. Вот кто возглавляет Hytale:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Саймон Коллинз-Лафламм (соучредитель): Ежедневно принимает непосредственное участие, формируя видение и обеспечивая долгосрочное здоровье игры и сообщества. Софинансирование проекта. Филипп Тушетт (соучредитель): Софинансирование, контроль финансовой ответственности и помощь в структурировании финансов для приобретения. Кевин Карстенс (технический руководитель): руководит всеми техническими разработками с первого дня и глубоко знает каждый уровень игры. Патрик Дербик (руководитель управления): управление операциями студии, координация команды и обеспечение эффективного исполнения.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы повторно наняли более 30 бывших разработчиков, которые ранее работали над Hytale. Это люди, которые знают кодовую базу, понимают видение и решают вернуться. Мы продолжим нанимать сотрудников, если позволит бюджет и если мы найдем подходящих кандидатов.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы ищем трудолюбивых, целеустремленных людей, которые хотят быть частью чего-то значимого.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "МОДдинг: ВАЖНО ДЛЯ ВЫЖИВАНИЯ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Моддинг снова стал главным приоритетом. Это всегда было в основе нашего видения и имеет решающее значение для нашего долгосрочного выживания. Мы запустим ранний доступ с максимально возможным количеством инструментов для моддинга и максимально широким доступом с соблюдением юридических ограничений и ограничений безопасности.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Что вы можете ожидать:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В Hytale можно модифицировать практически все (контент и серверную часть). Не-разработчики могут создавать впечатляющие впечатления с минимальными техническими знаниями. Большинству людей будет достаточно нескольких руководств или видеороликов, чтобы начать творить. Мы предоставим доступ к исходному коду сервера в течение нескольких месяцев, как только мы будем к этому юридически готовы. Поддержка выделенного сервера и настройка контента на основе данных. Мы помним об обратной совместимости во время итераций. Вы можете создавать свои собственные серверы, карты, приключения и т. д. Более подробная информация будет предоставлена в будущем. сообщение в блоге",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Для нас моддинг — это не просто функция. Это основа долголетия. Мы полностью посвятили себя этому.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ЧТО ЭТО ЗНАЧИТ ДЛЯ ВАС",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Нам нужна ваша помощь, чтобы завершить Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Играйте в раннем доступе (даже когда это сложно) Сообщайте об ошибках и оставляйте честные отзывы Создавайте моды и контент Будьте терпеливы, когда что-то ломается, и доверяйте долгосрочному видению Создавайте руководства и делитесь знаниями с другими",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Это не полированный продукт. Это сырой, незаконченный, иногда сломанный опыт с невероятным потенциалом. Вы найдете заполнитель, несбалансированные системы и досадные ошибки. Вы также найдете волшебные моменты, идеально работающие системы и представление о том, чем это может стать.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Ранний доступ – это наш способ заслужить ваше доверие, а не просить о нем.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ГДЕ НАС НАЙТИ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "В Discord происходят действия Hytale. Основные анонсы поступают на все платформы, но Discord — это место, где живет сообщество и наши разработчики наиболее активны.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Нажмите здесь, чтобы присоединиться к нам.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы создаем каналы для моддинга, создания карт, отчетов об ошибках, отзывов, учебных пособий и мероприятий сообщества.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Все основные объявления также будут отправляться в X, Instagram, Reddit и другие.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ДВИЖЕНИЕ ВПЕРЕД",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы выпускаем новые функции и дорабатываем их позже. Многие функции будут в отдельной «Версии 1»: функциональной, но на ранней стадии. Мы сосредоточены на совместной работе основных систем, а не на совершенствовании каждой из них по отдельности. Ожидайте очень частых обновлений. Быстрое движение означает, что вещи могут чаще ломаться. Сохранения могут быть затронуты. Системы могут измениться. Это компромисс скорости.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы обязуемся открыто сообщать об изменениях и обновлениях разработки.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Десять лет взлетно-посадочной полосы дают нам время сделать все правильно. Мы строим что-то долговечное.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В СЛЕДУЮЩИХ ДНЯХ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Видеозапись игрового процесса и скриншоты (не доработанные, как есть)Подробные примечания к патчу из нашей недавней работы Возможности моддинга и план действий в блогеИнформация о ценах на различные выпускиМножество обновлений и информацииДата выхода в раннем доступе",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "ЗАКЛЮЧИТЕЛЬНЫЕ МЫСЛИ",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "У Hytale был долгий и трудный путь. Это заняло больше времени, чем кто-либо надеялся, и за это время многое изменилось.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Но мы здесь: начинаем заново с четырехлетней сборки, небольшой преданной своему делу команды, сообщества, которое отказывается сдаваться, и видения, соответствующего новой реальности.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Это будет непросто. Это не будет быстро. Это не будет идеально.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Но это будет наше. Создано вместе: одна функция за раз, одно исправление ошибок за раз, один мод за раз.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Хайтейл жив. Спасибо.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "От всей команды Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Чтобы загрузить ZIP-файл, содержащий клипы, представленные в этом сообщении блога, нажмите здесь!",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      }
+    ]
+  }
+}
