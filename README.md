@@ -1,6 +1,6 @@
 # KDG Hytale Portal (Hytale News Tracker — Styled v6)
 
-**Version:** 1.1.1-KDG
+**Version:** 1.1.2 KDG
 
 Это десктопное приложение показывает новости и видео по Hytale и оформлено под стилистику https://hytale.com с фирменным логотипом, линией, кнопкой очистки кэша и ссылкой на KDG (https://bio.link/kdg_info).
 
