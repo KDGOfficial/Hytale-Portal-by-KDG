@@ -6,8 +6,6 @@ from datetime import datetime
 import threading
 import re
 import webbrowser
-import webview # pip install pywebview
-import multiprocessing
 from bs4 import BeautifulSoup
 import json
 import os
@@ -22,7 +20,7 @@ RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
 CACHE_FILE = "news_cache_v3.json" # Кэш
 
 APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.0.0-KDG"
+APP_VERSION = "1.1.0-KDG"
 
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
@@ -44,21 +42,13 @@ HYTALE_STYLE = {
 
 # ----------------- УТИЛИТЫ -----------------
 
-def launch_browser_process(title, url):
-    """Запуск webview в отдельном процессе — позволяет проигрывать видео внутри нативного браузера.
-    webview будет открываться как отдельное окно приложения, но выглядит "встроено" в рабочий процесс.
-    """
-    try:
-        webview.create_window(title, url, width=1280, height=720, resizable=True)
-        webview.start()
-    except Exception as e:
-        print('Ошибка запуска webview:', e)
-
 class HytaleApp:
     def __init__(self, root):
         self.root = root
         self.root.title(f"{APP_NAME} — v{APP_VERSION}")
-        self.root.geometry("820x820")
+        self.root.geometry("1200x900")
+        self.root.minsize(1024, 720)
+        self.root.state('zoomed')
         self.root.configure(bg=HYTALE_STYLE['bg'])
 
         self.colors = HYTALE_STYLE
@@ -402,20 +392,17 @@ class HytaleApp:
 
     # --- Видео и превью в основном окне для каналов YouTube ---
     def open_in_app_viewer(self, url, title, is_youtube=False):
+        target_url = url
         if is_youtube:
-            # извлекаем id
             m = re.search(r'(?:v=|/)([0-9A-Za-z_-]{11})', url)
             vid = m.group(1) if m else None
             if vid:
-                embed = f'https://www.youtube.com/embed/{vid}?autoplay=1&rel=0'
-                self.status_bar.config(text=f'Открытие видео: {title}')
-                # Запускаем webview в отдельном процессе, чтобы не блокировать Tk
-                p = multiprocessing.Process(target=launch_browser_process, args=(title, embed))
-                p.start()
-            else:
-                # если это уже embed-ссылка
-                p = multiprocessing.Process(target=launch_browser_process, args=(title, url))
-                p.start()
+                target_url = f'https://www.youtube.com/watch?v={vid}'
+            self.status_bar.config(text=f'Открытие видео: {title}')
+            try:
+                webbrowser.open_new_tab(target_url)
+            except Exception as exc:
+                messagebox.showerror('Ошибка', f'Не удалось открыть видео: {exc}')
         else:
             self.open_news_window(url, title)
 
@@ -569,7 +556,6 @@ class HytaleApp:
         tk.Label(container, text=f'⚠️ {msg}', fg='#ff6b6b', bg=self.colors['card_bg'], font=('Arial', 9)).pack(anchor='w', padx=8, pady=4)
 
 if __name__ == '__main__':
-    multiprocessing.freeze_support()
     root = tk.Tk()
     app = HytaleApp(root)
     root.mainloop()
