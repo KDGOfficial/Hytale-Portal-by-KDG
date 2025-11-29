@@ -20,7 +20,7 @@ RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
 CACHE_FILE = "news_cache_v3.json"      
 
 APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.1.2-KDG"
+APP_VERSION = "1.1.3-KDG"
 
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
@@ -286,6 +286,12 @@ class HytaleApp:
         canvas.bind('<MouseWheel>', _on_mousewheel)
         canvas.bind('<Button-4>', _on_mousewheel)
         canvas.bind('<Button-5>', _on_mousewheel)
+        frame.bind('<MouseWheel>', _on_mousewheel)
+        frame.bind('<Button-4>', _on_mousewheel)
+        frame.bind('<Button-5>', _on_mousewheel)
+        w.bind('<MouseWheel>', _on_mousewheel)
+        w.bind('<Button-4>', _on_mousewheel)
+        w.bind('<Button-5>', _on_mousewheel)
 
         self._render_content_blocks(frame, content_blocks, w)
 
