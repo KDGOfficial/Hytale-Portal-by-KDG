@@ -12,15 +12,15 @@ import os
 from urllib.parse import quote_plus
 import time
 from io import BytesIO
-from PIL import Image, ImageTk # pip install Pillow
+from PIL import Image, ImageTk                     
 
-# --- НАСТРОЙКИ ---
+                   
 HYTALE_API_URL = "https://hytale.com/api/blog/post/published"
 RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
-CACHE_FILE = "news_cache_v3.json" # Кэш
+CACHE_FILE = "news_cache_v3.json"      
 
 APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.1.0-KDG"
+APP_VERSION = "1.1.2-KDG"
 
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
@@ -28,19 +28,19 @@ CHANNELS_DATA = [
     {"name": "Zifirsky", "url": "https://www.youtube.com/@Zifirsky", "id": None},
 ]
 
-# ----------------- ДИЗАЙН (стиль Hytale) -----------------
+                                                           
 HYTALE_STYLE = {
-    'bg': '#030b14',        # почти ночное небо
-    'card_bg': '#0c1520',   # глубокий темный
+    'bg': '#030b14',                           
+    'card_bg': '#0c1520',                    
     'text': '#e7f4ff',
-    'accent': '#f3d983',    # золотистый
+    'accent': '#f3d983',                
     'link': '#a8e0ff',
     'date': '#a1b7d0',
     'video_bg': '#091721',
     'panel': '#0a1b2a'
 }
 
-# ----------------- УТИЛИТЫ -----------------
+                                             
 
 class HytaleApp:
     def __init__(self, root):
@@ -58,9 +58,9 @@ class HytaleApp:
 
         self.news_cache = self.load_cache()
         self.translator = None
-        self.image_refs = [] # держим объекты PhotoImage
+        self.image_refs = []                            
 
-        # Попытка инициализировать googletrans (необязательно)
+                                                              
         try:
             from googletrans import Translator
             try:
@@ -70,7 +70,7 @@ class HytaleApp:
         except:
             self.translator = None
 
-        # --- Header (стилизованный) ---
+                                        
         header = tk.Canvas(root, height=140, bg=self.colors['bg'], highlightthickness=0)
         header.pack(fill='x')
         header.create_rectangle(0, 0, 820, 140, fill=self.colors['bg'], outline='')
@@ -90,11 +90,11 @@ class HytaleApp:
         self.header_canvas = header
         self.root.bind('<Configure>', self._adjust_header)
 
-        # Таймер релиза
+                       
         self.timer_lbl = tk.Label(root, text='...', font=('Courier New', 14, 'bold'), bg=self.colors['bg'], fg=self.colors['accent'])
         self.timer_lbl.pack(pady=(6, 4))
 
-        # Разделы
+                 
         self.create_section('📰 Новости Hytale.com ', 'news_container')
         self.create_section('📺 Свежие видео', 'yt_container')
 
@@ -144,7 +144,7 @@ class HytaleApp:
                 return
         self.status_bar.config(text='Кэш очищен')
 
-    # --- Парсер — как у вас был, без изменений логики ---
+                                                          
     def fetch_news_content_structured(self, url):
         cached = self.news_cache.get(url)
         if isinstance(cached, dict) and cached.get('blocks'):
@@ -193,7 +193,7 @@ class HytaleApp:
             print('Ошибка загрузки новости:', e)
             return [{'type':'text','content':f'Ошибка загрузки: {e}','style':'error'}]
 
-    # --- Перевод ---
+                     
     def translate_text(self, text):
         if not text or not text.strip(): return text
         if self.translator:
@@ -230,7 +230,7 @@ class HytaleApp:
         except: pass
         return text
 
-    # --- Просмотр статьи (как у вас) ---
+                                         
     def open_news_window(self, url, title):
         def load():
             data = self.fetch_news_content_structured(url)
@@ -256,13 +256,13 @@ class HytaleApp:
         w.title(title)
         w.geometry('1000x820')
         w.configure(bg=self.colors['bg'])
-        # header
+                
         hf = tk.Frame(w, bg=self.colors['card_bg'])
         hf.pack(fill='x', padx=8, pady=8)
         tk.Label(hf, text=title, font=('Arial', 14, 'bold'), bg=self.colors['card_bg'], fg=self.colors['text']).pack(anchor='w', padx=8, pady=6)
         tk.Label(hf, text=original_url, font=('Arial', 9), bg=self.colors['card_bg'], fg=self.colors['link'], cursor='hand2').pack(anchor='w', padx=8)
 
-        # scroll area
+                     
         main = tk.Frame(w, bg=self.colors['bg'])
         main.pack(fill='both', expand=True, padx=8, pady=4)
         canvas = tk.Canvas(main, bg=self.colors['card_bg'], highlightthickness=0)
@@ -345,25 +345,25 @@ class HytaleApp:
             window.after(0, err)
 
     def _render_video_block(self, parent, block):
-        # Create a frame with a distinct background and border
+                                                              
         f = tk.Frame(parent, bg=self.colors['video_bg'], bd=1, relief='groove')
         f.pack(fill='x', padx=12, pady=8, ipady=4)
         
-        # Make the entire frame clickable
+                                         
         def open_video(event):
             import webbrowser
             webbrowser.open(block['src'])
             
         f.bind('<Button-1>', open_video)
         
-        # Add a header with video icon and title
+                                                
         header = tk.Frame(f, bg=self.colors['video_bg'])
         header.pack(fill='x', padx=8, pady=4)
         
-        # Make header clickable too
+                                   
         header.bind('<Button-1>', open_video)
         
-        # Video icon and title
+                              
         tk.Label(header, 
                 text='🎥 ВИДЕО (нажмите для просмотра)', 
                 font=('Arial', 10, 'bold'), 
@@ -371,12 +371,12 @@ class HytaleApp:
                 bg=self.colors['video_bg'],
                 cursor='hand2').pack(side='left')
         
-        # Add the video URL as a clickable link
+                                               
         url_frame = tk.Frame(f, bg=self.colors['video_bg'])
         url_frame.pack(fill='x', pady=(0, 4))
         url_frame.bind('<Button-1>', open_video)
         
-        # Truncate long URLs for display
+                                        
         display_url = block['src']
         if len(display_url) > 60:
             display_url = display_url[:30] + '...' + display_url[-25:]
@@ -390,7 +390,7 @@ class HytaleApp:
         url_label.pack()
         url_label.bind('<Button-1>', open_video)
 
-    # --- Видео и превью в основном окне для каналов YouTube ---
+                                                                
     def open_in_app_viewer(self, url, title, is_youtube=False):
         target_url = url
         if is_youtube:
@@ -457,7 +457,7 @@ class HytaleApp:
     def fetch_all_data(self):
         self.clear_frame(self.news_container)
         self.clear_frame(self.yt_container)
-        # --- Hytale news ---
+                             
         try:
             r = requests.get(HYTALE_API_URL, headers=self.headers, timeout=10)
             if r.status_code == 200:
@@ -473,7 +473,7 @@ class HytaleApp:
         except Exception as e:
             self.add_error(self.news_container, f"Ошибка доступа к API Hytale: {e}")
 
-        # --- YouTube channels ---
+                                  
         for ch in CHANNELS_DATA:
             try:
                 current_id = ch.get('id')
@@ -494,7 +494,7 @@ class HytaleApp:
 
                 if feed and feed.entries:
                     video = feed.entries[0]
-                    # Получаем ID видео
+                                       
                     m = re.search(r'v=([0-9A-Za-z_-]{11})', video.link)
                     vid = m.group(1) if m else None
                     self.add_item(self.yt_container, f"[{ch['name']}] {video.title}", video.link, self.colors['text'], is_youtube=True, youtube_id=vid)
@@ -513,11 +513,11 @@ class HytaleApp:
         row = tk.Frame(container, bg=self.colors['card_bg'])
         row.pack(fill='x', pady=6, padx=6)
         if is_youtube and youtube_id:
-            # Превью миниатюры
+                              
             thumb_url = f'https://img.youtube.com/vi/{youtube_id}/hqdefault.jpg'
             thumb_label = tk.Label(row, text='Загрузка превью...', bg=self.colors['card_bg'], fg=self.colors['date'])
             thumb_label.pack(side='left', padx=(4,8))
-            # Загружаем изображение в фоне
+                                          
             def load_thumb():
                 try:
                     r = requests.get(thumb_url, timeout=8)
