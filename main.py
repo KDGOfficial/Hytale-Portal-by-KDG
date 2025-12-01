@@ -20,7 +20,7 @@ RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
 CACHE_FILE = "news_cache_v3.json"      
 
 APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.1.3-KDG"
+APP_VERSION = "1.1.4-KDG"
 
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
@@ -28,7 +28,26 @@ CHANNELS_DATA = [
     {"name": "Zifirsky", "url": "https://www.youtube.com/@Zifirsky", "id": None},
 ]
 
-                                                           
+def extract_youtube_id(url):
+    if not url:
+        return None
+    patterns = [
+        r'youtu\.be/([0-9A-Za-z_-]{11})',
+        r'/(?:embed|shorts)/([0-9A-Za-z_-]{11})',
+        r'v=([0-9A-Za-z_-]{11})'
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, url)
+        if match:
+            return match.group(1)
+    return None
+
+def normalize_youtube_url(url):
+    vid = extract_youtube_id(url)
+    if vid:
+        return f'https://www.youtube.com/watch?v={vid}'
+    return url
+
 HYTALE_STYLE = {
     'bg': '#030b14',                           
     'card_bg': '#0c1520',                    
@@ -400,10 +419,7 @@ class HytaleApp:
     def open_in_app_viewer(self, url, title, is_youtube=False):
         target_url = url
         if is_youtube:
-            m = re.search(r'(?:v=|/)([0-9A-Za-z_-]{11})', url)
-            vid = m.group(1) if m else None
-            if vid:
-                target_url = f'https://www.youtube.com/watch?v={vid}'
+            target_url = normalize_youtube_url(url)
             self.status_bar.config(text=f'Открытие видео: {title}')
             try:
                 webbrowser.open_new_tab(target_url)
@@ -518,14 +534,18 @@ class HytaleApp:
     def add_item(self, container, text, url, color, is_youtube=False, youtube_id=None):
         row = tk.Frame(container, bg=self.colors['card_bg'])
         row.pack(fill='x', pady=6, padx=6)
-        if is_youtube and youtube_id:
-                              
-            thumb_url = f'https://img.youtube.com/vi/{youtube_id}/hqdefault.jpg'
+        if is_youtube:
+            vid = youtube_id or extract_youtube_id(url)
+            
+            normalized_url = normalize_youtube_url(url)
             thumb_label = tk.Label(row, text='Загрузка превью...', bg=self.colors['card_bg'], fg=self.colors['date'])
             thumb_label.pack(side='left', padx=(4,8))
-                                          
+                                                        
             def load_thumb():
                 try:
+                    if not vid:
+                        raise ValueError('ID отсутствует')
+                    thumb_url = f'https://img.youtube.com/vi/{vid}/hqdefault.jpg'
                     r = requests.get(thumb_url, timeout=8)
                     r.raise_for_status()
                     img = Image.open(BytesIO(r.content)).convert('RGBA')
@@ -550,9 +570,9 @@ class HytaleApp:
             lbl.pack(anchor='w')
             sub = tk.Label(txt_frame, text=url, font=('Arial', 8), fg=self.colors['date'], bg=self.colors['card_bg'])
             sub.pack(anchor='w')
-            play = tk.Button(row, text='▶', bg=self.colors['accent'], fg='#111', command=lambda: self.open_in_app_viewer(url, text, is_youtube=True))
+            play = tk.Button(row, text='▶', bg=self.colors['accent'], fg='#111', command=lambda: self.open_in_app_viewer(normalized_url, text, is_youtube=True))
             play.pack(side='right', padx=8)
-            lbl.bind('<Button-1>', lambda e: self.open_in_app_viewer(url, text, is_youtube=True))
+            lbl.bind('<Button-1>', lambda e: self.open_in_app_viewer(normalized_url, text, is_youtube=True))
         else:
             lbl = tk.Label(row, text=text, font=('Arial', 11), fg=color, bg=self.colors['card_bg'], cursor='hand2', wraplength=740, justify='left')
             lbl.pack(fill='x', padx=6, pady=6)

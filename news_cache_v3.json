@@ -220,5 +220,21 @@
         "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
       }
     ]
+  },
+  "https://www.youtube.com/shorts/ZxDpI4mIoIE": {
+    "blocks": [
+      {
+        "type": "text",
+        "content": "Не удалось извлечь содержимое статьи.",
+        "style": "error"
+      }
+    ],
+    "translated": [
+      {
+        "type": "text",
+        "content": "Не удалось извлечь содержимое статьи.",
+        "style": "error"
+      }
+    ]
   }
 }
