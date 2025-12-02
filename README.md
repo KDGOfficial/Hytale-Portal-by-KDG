@@ -1,6 +1,6 @@
 # KDG Hytale Portal (Hytale News Tracker — Styled v6)
 
-**Version:** 1.1.4-KDG
+**Version:** 1.2.0-KDG
 
 Это десктопное приложение показывает новости и видео по Hytale и оформлено под стилистику https://hytale.com с фирменным логотипом, линией, кнопкой очистки кэша и ссылкой на KDG (https://bio.link/kdg_info).
 
@@ -22,7 +22,11 @@ pip install -r requirements.txt
 - feedparser
 - beautifulsoup4
 - pillow
-- pywebview
+ - pywebview
+ - pygame (for embedded playback inside the app)
+ - mutagen (used by the embedded player to determine track duration)
+ - pygame (for embedded playback inside the app)
+ - mutagen (used by the embedded player to determine track duration)
 
 `tkinter` уже встроен в Python.
 
@@ -34,6 +38,14 @@ pip install -r requirements.txt
 4. Запустите `python main.py`.
 
 После этого приложение откроет главное окно, загрузит новости и видео и позволит взаимодействовать с контентом.
+
+The app also includes a built-in Music Player (version 1.2.0):
+
+- Plays music from the `Music/` directory on startup.
+- Starts playback at 21% volume by default.
+- Main page contains controls to mute/unmute and open a dedicated player window.
+- The player window includes play/pause, next/previous, a seek slider, volume control, and add/remove favorites.
+- Favorites are saved to `music_favorites.json`.
 
 ## Кэш и обновление
 
@@ -48,11 +60,12 @@ pip install -r requirements.txt
 
 ## Версия и авторство
 
-- Текущая версия: **1.1.4-KDG**.
+- Текущая версия: **1.2.0-KDG**.
 - Приложение создано KDG — https://bio.link/kdg_info.
 - Главное окно открывается на весь экран, элементы адаптируются под максимум пространства. 
 
 ## История версий
-
+ 
+- **1.2.0-KDG**: Добавлен встроенный плеер музыки на базе `pygame` (встраиваемый режим) с использованием `mutagen` для определения длительности треков. 
 - **1.1.4-KDG**: починено отображение и открытие YouTube Shorts — теперь миниатюры корректно грузятся от идентификатора видео, а просмотр всегда открывает нормализованный `watch?v=` URL.
 - **1.1.3-KDG**: базовая версия со списком новостей, видео и кэшем статей.

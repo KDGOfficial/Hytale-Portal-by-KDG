@@ -1,69 +1,548 @@
 {
-  "https://hytale.com/news/2025/11/hytale-early-access-january-13-2026": {
+  "https://hytale.com/news/2025/11/hytale-modding-strategy-and-status": {
     "blocks": [
       {
         "type": "text",
-        "content": "Hytale Early Access: January 13, 2026",
+        "content": "Hytale Modding Strategy and Status",
         "style": "header"
       },
       {
         "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_cover_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+        "src": "https://cdn.hytale.com/variants/blog_cover_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
       },
       {
         "type": "text",
-        "content": "Hytale enters early access on January 13, 2026.",
+        "content": "Hytale Modding Strategy and Status",
         "style": "header"
       },
       {
         "type": "text",
-        "content": "Pre-purchase opens December 13, 2025.",
+        "content": "Hello, I am Slikey (Kevin Carstens), the Technical Director of Hytale.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "Two weeks ago, we, the original founders, repurchased Hytale, months after it was cancelled. We revived the project, and we are returning to a four-year-old legacy build that had been abandoned. We are personally committing funding for many years to come.",
+        "content": "I want to give you a clear, honest overview of where Hytale modding stands today, what you can expect in the short term, and where we're taking this in the long run.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "We stepped away from the newer engine, which was intended to be a complete cross-platform rewrite, and we are now focused on reviving the original version. This required picking, choosing, and merging more than 300 GitHub branches into a single working branch. It was a significant engineering effort, but we’re now confident enough to launch early access.",
+        "content": "This is not a polished marketing post. It's a status report from the people building the game and its tools, written for the people who want to build with us.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "Hytale and Hypixel Studios are independent again, and we are returning to the original vision from the 2018 trailer. Because we went back to an older game build that was now meant for prototypes, some parts of the game will feel behind, but momentum is strong, and we’re working fast to make this into the game we all dreamed of.",
+        "content": "Hytale gives you a lot of tools to express your creativity and in this post we want to cover the current status and future vision for scripting, programming, modelling and configuration.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "Modding and creative tools are in a decent state; however, they’re not where we want them long term. That being said, they’re ready for players who want to create content on day 1. This is a good moment for modders, server owners, and creators to step in early! They will play a significant role in Hytale’s future.",
+        "content": "MISSION: MODDING AT THE CORE OF HYTALE",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We will always strive to create an immersive adventure for Hytale and continuously expand it in the future. The fortunate fact for modders is that we built the game with the tools that we deliver with the game. Our goal is that anything we do, you can do as well.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "Since the cancellation, we’ve rehired more than 40 former and new team members, bringing the total to 50. Reacquiring a game from a AAA studio and preparing an early access launch within weeks is rare, and players will be able to watch the progress as it happens.",
+        "content": "As a modder, you will benefit not just from the tooling we used but also from the content we create to deliver the block game we have always craved for.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "If you don’t feel comfortable pre-ordering, please don’t. This is true early access, meaning it’s still very much unfinished and will be buggy for a while, but you have my and the team's commitment to make Hytale the game we’ve always wanted it to be.",
+        "content": "We're building Hytale with modding at its core. Most of what you see in the game can be changed, extended, or removed entirely. Blocks, Items, NPCs, World Generation, UIs, systems, and behaviours are all driven by data and code that you can influence.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "The first impression will be rough, but the path ahead matters more. More details are coming soon. Follow our social channels for updates, and we hope to see you on January 13, 2026.",
+        "content": "In this post we will talk about the game “client” and the “server”. Usually “servers” are only relevant when joining multiplayer. Hytale is different - even when you join singleplayer, you join a local server that is just for yourself. So when we talk about servers, we mean both singleplayer and multiplayer.",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "Thank you, everyone, for your support. Hytale has been through a long journey, and soon, we will be home.",
+        "content": "A few key principles guide us:",
         "style": "normal"
       },
       {
         "type": "text",
-        "content": "~ Simon and the entire Hytale team",
+        "content": "Server-side first:All modding in Hytale is based on the host of the server or host of the game. You should be able to join any modded Hytale server without downloading external mods or juggling client packs. Use any combination of plugins and asset packs to customize your gameplay experience or rely on a server to offer you an experience. You create a singleplayer save and select the mods you want to use for that savegame.One community, one client:We want to avoid a fragmented ecosystem where every server requires a different modded client. For that reason, we don't intend to support any client mods. The client should remain stable, secure, and consistent, while servers provide the creativity and variation.Modding for longevity:We are committing to modding for the long term. We believe modders like us have been looking for a project that doesn't just tolerate them but actively embraces and supports them.Empowering modders without exposing players:We want modders to benefit from their work and build a future they can rely on, with as much freedom as possible - without exposing players to the security and safety risks that exist on some other modding platforms.",
         "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "That's the standard we're holding ourselves to. We're not there yet - but that's the direction.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "TECHNICAL REALITY CHECK",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Now for the blunt part: we are behind where we want to be.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are missing years of development time that we now need to compress into months.There are gaps in our tools, our documentation, and the ways systems are exposed.Some features exist only because they were hacked together during prototyping and never polished.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We made a deliberate decision:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Ship access now instead of waiting for perfection.We chose to fix up what we reasonably could in the short time we've had with the project, and then open things up so you can start experimenting while we work toward the long-term modding vision.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What this means for you right now:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "You will run intolimitationsdue to missing editing capabilities.Certain aspects ofclient behaviour are not yet exposedto the server.Some tools and systems arerough, inconsistent, or painfulto work with.Modding maturity iswildly unevendepending on what you want to build.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We decided not to hide valuable features just because they're not up to our current standards. If something is useful to you, we'll try to make it available and iterate on it in public.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "You are absolutely encouraged to hold us accountable for that.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hold us responsible for this progress. Tag us, reach out, demand answers. We commit to being transparent and telling you the truth - even if the truth is \"this is not good enough yet\" or \"we don't know yet.\"Don't just take our word for it. Demand results. Give us feedback. Don't hold back.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Community and Communication",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "You don't have to figure this out alone. We're anchoring the creator community in a few core places:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Discord:Official Hytale,where you can talk directly with us and other modders. There are also other Discords with UGC (User-Generated Content) focus such asCurseForge. We may join other Discord communities and listen to you. Discord has been absolutely brilliant in supporting us on setting up the Hytale space.X / Reddit:Tweet at us or post on Hytale related subreddits. We can't reply to everything but we are actively scanning posts and comments to guide us. A lot of this post was based on exactly those questions.Documentation (GitBook, in progress):We are working on public creator documentation hosted on GitBook. This will start incomplete and uneven, but we'll expand it as we go and based on your questions.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "CURRENT STATE OF MODDING",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We're currently not satisfied with the state of modding in Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "However, we believe that holding access back until everything is perfect would be a disservice. If you join us now, you'll be part of shaping the ecosystem and you'll learn the concepts as they evolve, which will give you a deep understanding over time.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Four Major Content Categories",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Right now, Hytale modding largely falls into four technical categories:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Server Plugins - Java .jar filesExtend the functionality of the server programmatically.Extremely powerful and allows deep modifications to the gameplay experience and core server system.Use them to build minigames, economies, commands, custom logic, new asset type, and more.Data Assets - JSON filesDrive gameplay behaviour and define core content:Blocks, items, NPCsWorld generationDrop tables, loot, and more.Art Assets - Sounds, models, texturesProvide the visual and audio representation of game elements.We support Blockbench for creating Hytale models, textures, and animations.Save Files - Worlds and PrefabsShare whole worlds or specific builds.Prefabs are used in creative tools and world generation to place prebuilt structures like trees, houses, or large landmarks.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "WHY WE'RE NOT ADDING TEXT-BASED SCRIPTING",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "A common question: \"Where's Lua/scripting?\"",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Short answer:We do not have text-based scripting and we do not intend to add it.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Here's why:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Text-based scripting is usually introduced to \"help non-programmers\" like designers building custom behaviours.In reality, script languages like Lua are still programming languages:Programmers now have to juggle two languages, one of which usually feels \"nerfed\".Designers are still expected to learn actual programming concepts.In the end, it's less inclusive and increases complexity for both sides.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We see that as a false compromise.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our Direction: Visual Scripting",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Instead of text-based scripting, we will addvisual scripting:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our experience with Unreal Engine Blueprints showed us that:Designers feel genuinely empowered when they can build logic visually.Programmers are more productive when they stay in a programming language (Java/C#) and expose high-level nodes.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The goal:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Designers are empowered through a visual language that matches how they think about behaviours.Programmers can extend and optimize this system by adding new visual nodes and performance-sensitive implementations.We avoid fragmenting logic across multiple \"half-languages\".",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We believe this is the most empowering approach for modders without compromising on capabilities.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "TOOLING AVAILABLE TODAY",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We currently offer the following tools for creating Hytale assets:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale Asset EditorEditor for data assets.Supports most asset types, with notable limitations around NPCs, world generation, and interactions.This will expand over time.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Blockbench PluginCreate Hytale-compatible models, textures, and animations directly in Blockbench.Replaces our own modelling and animation tools used in the past to better support established creative workflows in the community.Intended for release as soon as possible",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Asset Graph EditorAn unfinished internal editor we used as a temporary solution for world generation, creative tool brushes, NPCs and hopefully more soon.It is not at the quality bar we want, but it's useful enough that we'd rather expose it and improve it than hide it.Currently working on releasing it aswell",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Machinima ToolsThe tool we used to create the trailer back in 2018They have some technical issues we will need to fix but they are usable and delivered great results for us.Creative ToolsAn interactive suite of tools to modify the world and express your creativity.Expect dedicated videos / blogs about themWe also released some footage of them being used in the pastAnd more..",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "You will feel the rough edges. That is expected at this stage, and we intend to fix them with your feedback.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "SHORT-TERM IMPROVEMENTS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "This is not a complete roadmap, but it covers the biggest short-term issues we see in terms of urgency and impact for modders.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Shared Source Server",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We know that the lack of documentation for assets and systems is causing serious friction. We feel the same pain internally.We commit to releasing theserver source codeas soon as we are legally able to. Expect this within 1-2 months after release.In the meantime the server is not obfuscated, so you can decompile it easily.This will let you:Inspect how systems work under the hood while documentation is catching up.Unblock yourself by reading the actual implementation, not guessing from trial and error.Contribute improvements and bug fixes back to us if something bothers you enough that you don't want to wait.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Asset Pack / Mod Distribution",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Because we're releasing the game at this early stage, we did not have time to design a polished, first-class distribution flow.For now, expect friction when:Bundling creations into clean, sharable packages.Managing dependencies between plugins, asset packs, and worlds.This is one of our top modding priorities. Expect quick iteration as we see how you actually try to ship and share your work.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Custom UIs",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Right now, our UI situation is messy:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are usingthreeUI frameworks at the same time.We are in the process of ripping out two of them and consolidating onNoesisGUI.Noesis Technologies has been extremely helpful to us, and we want to acknowledge their role in helping make Hytale happen.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What this means for you:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We already have asset-driven UIs, but they are incomplete and limited.You can start experimenting with them now.Tell us what you are trying to build and where you get blocked, and we will prioritize unblocking you.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Stability",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "This one is simple and painful:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "There are crashes.Some of them are severe and can causedata loss.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our stance:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are fixing crashes as they come in and you can expect rapid improvements.But right now, wecannot guarantee data integrity.You should assume youwillbe affected at some point.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Practical advice:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Take frequent backups of your savegames and important creations. We are currently setting up automatic solutions but we can not guarantee safety.Treat this phase as true early access: valuable, but not yet safe for irreplaceable work.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are genuinely sorry for any issues this causes you, and we are treating stability as our top priority.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "First-Party Server Network",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We plan to launch a first-party server network, operated by an internal team, that offers a selection of classic Hypixel Network-style minigames after launch but work has not started on this yet.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Why we're doing this",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Bring back familiar minigames:Offer experiences you already know from our previous work, rebuilt for Hytale, as well as original new minigames unlocked by Hytale's capabilities.Dogfood our own systems:Use the same tools and workflows available to you so we can validate and improve minigame creation, live ops, and server management in real conditions.Gather real-world data:Observe how Hytale servers behave at scale so we can optimize performance, reduce hosting requirements, and drive costs down for everyone.Share what we learn:Partially or fully release the code and assets from our minigames so you can study how we build things, reuse components, and adopt best practices.De-risk Hytale's early days:Ensure there is a strong, reliable network of playable content even if community infrastructure takes time to ramp up. Our network's job is to pave the way until we can hand the torch over to you.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What we're not trying to do",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're not trying to outcompete you:The goal is not to dominate the server landscape or undercut modders and server owners.We're not diluting adventure development:This work is done by a dedicated team and does not reduce our focus or investment in Adventure mode.We're not using it to ignore feedback:We won't bias our roadmap around our own servers at the expense of the wider creator ecosystem or player needs.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Ultimately, our incentive is to grow a broad ecosystem with many successful servers and a wide variety of experiences. We do not benefit from having a monopoly inside our own game.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "LONG-TERM VISION FOR MODDERS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "In the long term, our goal is to provide a comprehensive suite of tools and services that allow you to flourish in Hytale, regardless of your starting point.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We want:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "New Modders to enter game creation without needing expensive software or years of experience.Experienced modders to build complex systems, businesses, and communities on top of Hytale.Hytale to blur the line between \"playing games\" and \"creating games\".",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Shared Source Server & Bounties",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Beyond simply releasing the server source:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We plan to opendevelopment bountiesfor specific improvements and features.This will take time to set up properly, but the goal is to reward contributions that strengthen the ecosystem.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Node Editor",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Some asset types are currently painful to configure in raw JSON, such as:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "NPCsInteractionsWorld generation",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We've been using internal tools to make this manageable. Our plan:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Release node-graph-style editors for these asset types.Integrate these node editors directly into the Hytale Asset Editor, so you have a unified creator suite instead of a patchwork of tools.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "concept vision for the future of the node editor",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Visual Scripting",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Visual scripting is a core pillar of our long-term vision:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Java plugins will continue to exist and are extremely powerful - but they require programming skills and come with safety concerns.Visual scripting will:Provide asandboxed, safe environment for sharing logic.Offergreat learnability and modifiabilityfor modders of all skill levels.Allow programmers to extend it with performance-critical nodes.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Over time, we want to:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Bring visual scripting directly into the3D world:Link levers, doors, spawners, triggers, and other elements in-game.Build intricate adventure maps and encounters directly inside Hytale.Take inspiration from systems like DOOM SnapMap while keeping it fully integrated with our asset and scripting stack.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "CLOSING WORDS",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We are, very deliberately, in \"early access\" for modders.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The tools are uneven.The documentation is incomplete.Some workflows feel great, others are frustrating.There are crashes, and you will lose work if you don't back up.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We're not pretending otherwise.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "At the same time:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "These are the tools we used to build Hytale itself.In many cases, we were building tools and content in parallel, with modding in mind.We know this approach works, because it already produced the game you're seeing.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our commitment to you:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We will keep improving the modding experience, step by step.We will focus on learnability, onboarding, and the ability to \"ramp up\" from beginner to expert.We will be transparent about what's ready, what's not, and what we're prioritizing next.And we will listen when you tell us where it hurts.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "If you're willing to join us in this phase - bugs, rough edges and all - you won't just be modding Hytale. You'll be shaping what Hytale modding becomes.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "I know there are a lot of details missing and you probably have more questions than before. I will be on our Hytale Discord server chat (Modding / Creative > #discussion) on Saturday, 22nd November 2025 at 12pm EST / 5pm GMT to answer your questions for a full hour and reply to as many questions as I can.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "See you in your version of Orbis,",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_abb62f3055672416aec9b17b97b01b4e_hardware_req_header.png"
       },
       {
         "type": "img",
@@ -103,117 +582,7 @@
       },
       {
         "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
-      }
-    ],
-    "translated": [
-      {
-        "type": "text",
-        "content": "Ранний доступ Hytale: 13 января 2026 г.",
-        "style": "header"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_cover_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
-      },
-      {
-        "type": "text",
-        "content": "Hytale выйдет в раннем доступе 13 января 2026 года.",
-        "style": "header"
-      },
-      {
-        "type": "text",
-        "content": "Предварительная покупка откроется 13 декабря 2025 г.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "Две недели назад мы, первоначальные основатели, выкупили Hytale, спустя несколько месяцев после его закрытия. Мы возобновили проект и возвращаемся к устаревшей сборке четырехлетней давности, от которой отказались. Мы лично берем на себя обязательства по финансированию на многие годы вперед.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "Мы отказались от нового движка, который должен был стать полной кросс-платформенной переработкой, и теперь сосредоточены на возрождении исходной версии. Для этого потребовалось собрать, выбрать и объединить более 300 веток GitHub в одну рабочую ветку. Это была значительная инженерная работа, но теперь мы достаточно уверены в себе, чтобы запустить ранний доступ.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "Hytale и Hypixel Studios снова независимы, и мы возвращаемся к первоначальному видению из трейлера 2018 года. Поскольку мы вернулись к более старой сборке игры, которая теперь предназначалась для прототипов, некоторые части игры будут отставать, но темп велик, и мы быстро работаем над тем, чтобы воплотить это в игру, о которой мы все мечтали.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "Инструменты для моддинга и творчества находятся в достойном состоянии; однако они не там, где мы хотим их в долгосрочной перспективе. При этом они готовы для игроков, которые хотят создавать контент с первого дня. Это хороший момент для моддеров, владельцев серверов и создателей, чтобы вмешаться заранее! Они сыграют значительную роль в будущем Hytale.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "С момента отмены мы повторно наняли более 40 бывших и новых членов команды, в результате чего их общее число достигло 50. Повторное приобретение игры у AAA-студии и подготовка к запуску в раннем доступе в течение нескольких недель — это редкость, и игроки смогут наблюдать за прогрессом по мере его развития.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "Если вам неудобно делать предварительный заказ, не делайте этого. Это настоящий ранний доступ, то есть он еще очень незакончен и какое-то время будет содержать ошибки, но у вас есть мое и нашей командой обязательство сделать Hytale той игрой, которой мы всегда хотели.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "Первое впечатление будет тяжелым, но путь вперед имеет большее значение. Более подробная информация появится в ближайшее время. Следите за обновлениями в наших социальных сетях, и мы надеемся увидеть вас 13 января 2026 года.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "Спасибо всем за вашу поддержку. Hytale прошла долгий путь, и скоро мы будем дома.",
-        "style": "normal"
-      },
-      {
-        "type": "text",
-        "content": "~ Саймон и вся команда Hytale",
-        "style": "normal"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
-      },
-      {
-        "type": "img",
         "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
-      },
-      {
-        "type": "img",
-        "src": "https://cdn.hytale.com/variants/blog_thumb_7c5bb6af44f293be3ff60b318d0b5475_winter_update_header.jpg"
       },
       {
         "type": "img",
@@ -221,19 +590,785 @@
       }
     ]
   },
-  "https://www.youtube.com/shorts/ZxDpI4mIoIE": {
+  "https://hytale.com/news/2025/12/hytale-hardware-requirements": {
     "blocks": [
       {
         "type": "text",
-        "content": "Не удалось извлечь содержимое статьи.",
-        "style": "error"
+        "content": "Hytale Hardware Requirements",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_abb62f3055672416aec9b17b97b01b4e_hardware_req_header.png"
+      },
+      {
+        "type": "text",
+        "content": "Hytale PC Performance & System Requirements",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "As we get closer to launch, many players have asked what kind of hardware Hytale requires. Our goal is clear: make the game broadly accessible while still supporting the scale, simulation, and modability that define Hytale. Remember that we are still working on performance improvements.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "This post outlines what we’ve tested so far, why certain hardware matters, and the currentminimum,recommended, andrecording/streamersystem requirements. These requirements are based on real in-house benchmarks and will continue to evolve as we optimize the game.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "You can scroll down to the“Recommended Requirements”for aTL;DR. Hytale is not a simple game for computers, so we try to explain as much as possible.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We are actively working to bring Hytale toLinux and Mac as soon as possible.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "System Requirements",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale requires both a 64-bit processor and operating system.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Minimum:Targeting 30+ FPS at 1080p on Low preset.Recommended:Targeting 60+ FPS at 1080p on High preset.Recording/Streamer:Stable framerate with high-quality video capture and streaming at 1440p.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "These categories reflect actual in-house testing across low-end integrated GPUs, mid-range laptops, and high-end recording setups.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Minimum Requirements (1080p @ 30 FPS)",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "OS:64-bit Windows 10 (version 1809), Windows 11CPU:Intel Core i5-7500 (or equivalent), AMD Ryzen 3 1200 (or equivalent)RAM:Singleplayer, with dedicated graphics: 8 GBSingleplayer, with integrated graphics: 12 GBMultiplayer-only: 8 GBGPU:Integrated:Intel UHD Graphics 620AMD Radeon Vega 6Dedicated:NVIDIA GTX 900 SeriesAMD Radeon 400 SeriesIntel Arc A-SeriesNote: A graphics card with up-to-date drivers supporting at least OpenGL 4.1 is required. Future versions of Hytale may additionally require support for Vulkan 1.3 and DirectX 12.Storage:SATA SSD with 20 GB of free spaceNetwork:2 Mbit/s connection for multiplayer (UDP/QUIC compatible).",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Based on benchmarks where Intel HD Graphics 630 achieved ~30–34 FPS at 1080p. We definitely recommend setting the “view distance” to 192 blocks. Ensure thatno other programs are runningto guarantee performance.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Recommended Requirements (1080p @ 60 FPS)",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "OS:64-bit Windows 10 (version 1809), Windows 11CPU:Intel Core i5-10400 (or equivalent), AMD Ryzen 5 3600 (or equivalent)RAM:16 GBGPU:Integrated:Intel Iris Xe GraphicsAMD Radeon 660MDedicated:NVIDIA GTX 900 SeriesAMD Radeon 400 SeriesIntel Arc A-SeriesNote: A graphics card with up-to-date drivers supporting at least OpenGL 4.1 is required. Future versions of Hytale may additionally require support for Vulkan 1.3 and DirectX 12.Storage:NVMe SSD with 20 GB of free spaceNetwork:8 Mbit/s connection for multiplayer (UDP/QUIC compatible)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Storage Requirements",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale procedurally generates a world that can, in practice, grow without a fixed limit. Based on extensive playtime in exploration mode, we found these numbers to be representative of a normal playthrough. Keep in mind: the more you explore, customize, and build with a wide variety of blocks, the more memory and storage the game will require.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Installation size:8 GBSaved game size (in Exploration mode):~661 MB for 5000x5000 blocks~27 KB per 32x32 chunk",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We recommendat least 10 GBof available storage with20 GB being a safe betto enjoy the game for a long duration.SSDis strongly recommended.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Network Requirements",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale has to be downloaded from the internet as we do not offer physical sales. Once downloaded, you canalways play singleplayer in “offline-mode”.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Formultiplayer, the network requirements mostly depend on yourview distance. You will download a lot more data than uploading. Yourupload speedis generally irrelevant and very small. (<250 Kbit/s)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We have tested anExploration Modeserver and created aworst-case scenarioby travelling at1.5xspeed to keep loading new world data faster than a player could.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "View Distance:192 blocksMinimum: 2 Mbit/sRecommended: 4 Mbit/sView Distance:384 blocksMinimum: 4.5 Mbit/sRecommended: 7 Mbit/sView Distance:480 blocksMinimum: 6 Mbit/sRecommended: 10 Mbit/s",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Keep in mind these numbers areworst case scenarios. If youplay normallyin an exploration mode server while mining, crafting and exploring, you willnot consume nearly as muchbandwidth and should even haveplayable experiences on 1 Mbit/s ADSLconnections at lower view distances.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Especiallyplaying minigamessuch as Skywars, Bedwars or other minigames with small maps will result invery low bandwidthusage.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Recording / Streamer Requirements (1440p @ 60 FPS)",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "For players who want torecord,stream, orproduce Hytale contentwith stable framerates during high-bitrate capture.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The goal here is not raw FPS but consistent frametime under heavy load (large battles, complex builds, high view distance, simultaneous server simulation if in singleplayer).",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Suggested Setup",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "OS:64-bit Windows 10 (version 1809), Windows 11CPU:Intel Core i7-10700K (or equivalent), AMD Ryzen 7 3800X (or equivalent)RAM:32 GBGPU:NVIDIA RTX 30 SeriesAMD Radeon RX 7000 SeriesIntel Arc A-seriesNote:These recommendations are made as newer graphics cards provide much better video quality for a given bitrate, especially for livestreaming scenarios. If supported, we also strongly recommend the use of AV1 / HEVC for video recording.Storage:NVMe SSD with at least 10% (or 50 GB) of free space available.Note:For best performance, we recommend using a separate drive for video recording.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "One internal benchmark (AMD Ryzen 9 9950X3D, NVIDIA RTX 5080, 2x32 GB DDR5-6000) sustained around 400 FPS at 3840×1440 resolution with view distance set to 768 blocks in singleplayer while recording the game in AV1.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "This tier isoptionalbut helpful for creators who want stable 60+ FPS at high resolutions during recording sessions.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "How Hytale Uses Your Hardware",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale runs both aclientand aserver. Depending on how you play, your hardware requirements change:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Singleplayer",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Singleplayer is the most demandingscenario. Your machine runs:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The full game client (rendering, UI, gameplay)The entire simulation on the server (NPCs, world generation/updates, networking layer)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "This increases CPU and RAM usage compared to multiplayer. Generally, the “server” orsingleplayer requires more CPU performancedue to NPCs, world generation and voxel logic running on your computer.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Multiplayer",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "In multiplayer, the server runs remotely. YourPC only handles graphics and gameplay, which typically results inbetter performanceon the same hardware.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "If you intend to play only multiplayer / minigames, you may be able to use less than the requirements listed below.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Modswill increase requirements. Large content packs, complex server logic, or extended view distances can push both the CPU and the GPU harder than in the baseline game.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "View Distance",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "The most impactful performance option is called“view distance”. This is the radius around the player that is visible, loaded and simulated around the player.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "The major problem of view distance is that every time youdoublethe view distance (e.g. 192 -> 384), youquadruplethe amount of world around you. That means you have 4x as many blocks and NPCs, which are causing your computer to work harder.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We recommend you experience Hytale with a view distance of 384 blocks. We designed Orbis around this distance, but if that is not enough for you, you may want to spend some time dialling in the ideal view distance for your own computer.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Visualization of View Distance",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "(Screenshot of 192 view distance from above)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Screenshot of 384 view distance from above)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Screenshot of 192 view distance from player perspective)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Screenshot of 384 view distance from player perspective for recommended gameplay)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Screenshot of 768 view distance from player perspective)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Screenshot of 1024 view distance from player perspective)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Technical Notes",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "This section is very technical and it is not expected that players understand this but it may help a technical friend / community member to help you determine if your computer / laptop is sufficient.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale is a sandbox voxel game, which means it cares more aboutCPU performance and RAMthan many other games. Once your GPU meets our minimum specs, upgrading your CPU (and having enough system memory) will usually help more than buying an even faster graphics card.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Internally, Hytale builds largetexture atlases(big combined textures) and keeps a lot of world geometry inVRAM. Higher view distances increase this usage. That’s why some GPUs run out of VRAM or start stuttering even if they look fine on paper.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "As a rule of thumb:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Make sure your GPU meets or exceeds our listed minimum (including VRAM).Prefer adedicated (discrete) GPUover an integrated one on laptops.After that, focus on a solid multi-core CPU and enough RAM rather than a top-end GPU.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Our Optimization Work Is Ongoing",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We havenot finished optimizingHytale. Graphics, world simulation, memory behavior, GPU overhead, and more arestill being tuned. Expectperformance to improvefurther as we progressthrough Early Access and beyond. Our mission is to continuouslyimprovetheperformanceof Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "What to Expect Next",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "We arestill workingon the system requirements forMac and Linuxwhich we intend to support for older Macs (Intel Processors) and newer Macs with M1+ (Apple Processors). We will update this post as we receive more data.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "We received a lot of inquiries about theSteamdeckand we also lack the ability to test it right now and we don’t plan to launch on Steam until we determine our ability to comply with Steam’s policies. On paper it should work on Steamdeck but we also lack good input mappings / small display UI - so we will once again ask for some patience.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "These requirementswill be updatedas weapply optimizations through Early Access. Our focus is to make Hytale run well across a wide variety of systems without compromising scale or modability.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "If you have acomputer that doesn’t run singleplayervery well, you shouldjoin a friendand play with them on their singleplayer orplay on online serversas they show better performance.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "~ Hytale Team",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_abb62f3055672416aec9b17b97b01b4e_hardware_req_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
       }
     ],
     "translated": [
       {
         "type": "text",
-        "content": "Не удалось извлечь содержимое статьи.",
-        "style": "error"
+        "content": "Требования к оборудованию Hytale",
+        "style": "header"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_cover_abb62f3055672416aec9b17b97b01b4e_hardware_req_header.png"
+      },
+      {
+        "type": "text",
+        "content": "Производительность ПК Hytale и системные требования",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "По мере приближения к запуску многие игроки задаются вопросом, какое оборудование требуется Hytale. Наша цель ясна: сделать игру широко доступной, сохраняя при этом масштаб, симуляцию и модификацию, которые определяют Hytale. Помните, что мы все еще работаем над улучшением производительности.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В этом посте описывается, что мы уже протестировали, почему определенное оборудование имеет значение, а также текущие минимальные, рекомендуемые и системные требования к записи/стримеру. Эти требования основаны на реальных внутренних тестах и ​​будут меняться по мере оптимизации игры.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Вы можете прокрутить вниз до «Рекомендуемых требований» для aTL;DR. Hytale — непростая игра для компьютеров, поэтому мы стараемся объяснить как можно больше.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы активно работаем над тем, чтобы как можно скорее перенести Hytale на Linux и Mac.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Системные требования",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale требует как 64-битный процессор, так и операционную систему.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Минимум: целевое значение 30+ кадров в секунду при разрешении 1080p с предустановкой «Низкий». Рекомендуется: целевое значение более 60 кадров в секунду при разрешении 1080p с предустановкой «Высокое». Запись/Стример: Стабильная частота кадров с высококачественной записью видео и потоковой передачей в разрешении 1440p.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Эти категории отражают фактическое внутреннее тестирование недорогих интегрированных графических процессоров, ноутбуков среднего класса и высокопроизводительных систем записи.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Минимальные требования (1080p при 30 кадрах в секунду)",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "ОС: 64-разрядная версия Windows 10 (версия 1809), Windows 11. ЦП: Intel Core i5-7500 (или аналогичный), AMD Ryzen 3 1200 (или аналогичный). ОЗУ: Однопользовательская игра, с выделенной графикой: 8 ГБ. Однопользовательская игра, со встроенной графикой: 12 ГБ. Только многопользовательская игра: 8 ГБ. 6Специально: NVIDIA серии GTX 900AMD Radeon серии 400Intel Arc A-SeriesПримечание. Требуется видеокарта с актуальными драйверами, поддерживающими как минимум OpenGL 4.1. В будущих версиях Hytale может дополнительно потребоваться поддержка Vulkan 1.3 и DirectX 12. Хранилище: SSD-накопитель SATA с 20 ГБ свободного места. Сеть: соединение 2 Мбит/с для многопользовательской игры (совместимо с UDP/QUIC).",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "На основе тестов, в которых Intel HD Graphics 630 показала ~30–34 кадров в секунду при разрешении 1080p. Мы обязательно рекомендуем установить «расстояние просмотра» на 192 блока. Убедитесь, что никакие другие программы не запущены, чтобы гарантировать производительность.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Рекомендуемые требования (1080p при 60 кадрах в секунду)",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "ОС: 64-разрядная версия Windows 10 (версия 1809), Windows 11. ЦП: Intel Core i5-10400 (или аналогичный), AMD Ryzen 5 3600 (или аналогичный). ОЗУ: 16 ГБ. Графический процессор: встроенный: Intel Iris Xe GraphicsAMD Radeon 660MD. Выделенный: NVIDIA GTX 900 SeriesAMD Radeon 400 SeriesIntel Arc. Примечание серии A. Требуется видеокарта с актуальными драйверами, поддерживающими OpenGL 4.1. В будущих версиях Hytale может дополнительно потребоваться поддержка Vulkan 1.3 и DirectX 12. Хранилище: твердотельный накопитель NVMe с 20 ГБ свободного места. Сеть: соединение 8 Мбит/с для многопользовательской игры (совместимо с UDP/QUIC).",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Требования к хранению",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale процедурно генерирует мир, который на практике может расти без фиксированных ограничений. Основываясь на продолжительном времени игры в режиме исследования, мы обнаружили, что эти цифры соответствуют обычному прохождению. Имейте в виду: чем больше вы исследуете, настраиваете и строите из самых разных блоков, тем больше памяти и памяти потребуется игре.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Размер установки: 8 ГБ Размер сохраненной игры (в режиме исследования): ~661 МБ для блоков 5000x5000 ~27 КБ на чанк 32x32",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы рекомендуем не менее 10 ГБ доступной памяти, при этом 20 ГБ — безопасный вариант, чтобы наслаждаться игрой в течение длительного времени. Настоятельно рекомендуется SSD.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Требования к сети",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale необходимо загружать из Интернета, поскольку мы не предлагаем физические продажи. После загрузки вы всегда сможете играть в одиночную игру в «оффлайн-режиме».",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В многопользовательской игре требования к сети в основном зависят от расстояния обзора. Вы загрузите гораздо больше данных, чем загрузите. Ваша скорость загрузки, как правило, не имеет значения и очень мала. (<250 Кбит/с)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы протестировали сервер режима исследования и создали наихудший сценарий, путешествуя со скоростью в 1,5 раза больше, чтобы загружать новые данные о мире быстрее, чем это мог бы сделать игрок.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Расстояние просмотра: 192 блокаМинимум: 2 Мбит/сРекомендуется: 4 Мбит/с Расстояние просмотра: 384 блокаМинимум: 4,5 Мбит/сРекомендуется: 7 Мбит/с Расстояние просмотра: 480 блоковМинимум: 6 Мбит/сРекомендуется: 10 Мбит/с",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Имейте в виду, что эти цифры представляют собой наихудший сценарий. Если вы обычно играете на сервере в режиме исследования, занимаясь майнингом, крафтом и исследованием, вы не будете потреблять столько же трафика и даже сможете играть на ADSL-соединениях со скоростью 1 Мбит/с на меньших расстояниях обзора.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "В частности, игра в мини-игры, такие как Skywars, Bedwars или другие мини-игры с маленькими картами, приведет к очень низкому использованию полосы пропускания.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Требования к записи/стримеру (1440p при 60 кадрах в секунду)",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Для игроков, которые хотят записывать, транслировать или создавать контент Hytale со стабильной частотой кадров при захвате с высоким битрейтом.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Целью здесь является не чистый FPS, а стабильное время кадра при большой нагрузке (большие сражения, сложные сборки, большое расстояние обзора, одновременная симуляция сервера в одиночной игре).",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Рекомендуемая настройка",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "ОС: 64-разрядная версия Windows 10 (версия 1809), Windows 11. ЦП: Intel Core i7-10700K (или аналогичный), AMD Ryzen 7 3800X (или аналогичный). ОЗУ: 32 ГБ. Графический процессор: серия NVIDIA RTX 30. Серия AMD Radeon RX 7000. Серия Intel Arc A. Примечание. Эти рекомендации даны, поскольку новые видеокарты обеспечивают гораздо лучшее качество видео для данного битрейт, особенно для сценариев прямой трансляции. Если поддерживается, мы также настоятельно рекомендуем использовать AV1/HEVC для записи видео. Хранение: твердотельный накопитель NVMe с не менее 10 % (или 50 ГБ) свободного места. Примечание. Для достижения наилучшей производительности мы рекомендуем использовать отдельный диск для записи видео.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Один внутренний тест (AMD Ryzen 9 9950X3D, NVIDIA RTX 5080, 2x32 ГБ DDR5-6000) выдержал около 400 кадров в секунду при разрешении 3840×1440 с дистанцией просмотра, установленной на 768 блоков в одиночной игре при записи игры в AV1.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Этот уровень является необязательным, но он полезен для авторов, которым нужна стабильная частота кадров 60+ в секунду при высоком разрешении во время сеансов записи.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Как Hytale использует ваше оборудование",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Hytale управляет как клиентом, так и сервером. В зависимости от того, как вы играете, ваши требования к оборудованию меняются:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Одиночная игра",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Одиночная игра — самый требовательный сценарий. Ваша машина работает:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Полный игровой клиент (рендеринг, пользовательский интерфейс, геймплей) Вся симуляция на сервере (NPC, генерация/обновления мира, сетевой уровень)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Это увеличивает загрузку процессора и оперативной памяти по сравнению с многопользовательской игрой. Как правило, «серверная» или одиночная игра требует большей производительности процессора из-за неигровых персонажей, генерации мира и воксельной логики, работающей на вашем компьютере.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мультиплеер",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "В мультиплеере сервер работает удаленно. Ваш компьютер обрабатывает только графику и игровой процесс, что обычно приводит к повышению производительности на том же оборудовании.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Если вы собираетесь играть только в многопользовательские игры/мини-игры, возможно, вам подойдет меньше требований, перечисленных ниже.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Моды повысят требования. Большие пакеты контента, сложная серверная логика или увеличенное расстояние просмотра могут нагружать как процессор, так и графический процессор сильнее, чем в базовой игре.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Расстояние просмотра",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Наиболее эффективная опция производительности называется «расстояние просмотра». Это радиус вокруг игрока, который виден, загружен и смоделирован вокруг игрока.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Основная проблема с расстоянием обзора заключается в том, что каждый раз, когда вы удваиваете расстояние обзора (например, 192 -> 384), вы увеличиваете в четыре раза объем окружающего вас мира. Это означает, что у вас в 4 раза больше блоков и неигровых персонажей, что заставляет ваш компьютер работать тяжелее.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы рекомендуем вам испытать Hytale с дальностью обзора 384 блока. Мы разработали Orbis с учетом этого расстояния, но если вам этого недостаточно, вы можете потратить некоторое время на подбор идеального расстояния обзора для вашего собственного компьютера.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Визуализация расстояния обзора",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "(Скриншот с расстояния просмотра 192 дюйма сверху)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Скриншот с расстояния просмотра 384 сверху)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Скриншот с расстояния обзора 192 дюйма с точки зрения игрока)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Скриншот с обзором на 384 градуса с точки зрения игрока для рекомендуемого игрового процесса)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Скриншот расстояния просмотра 768 с точки зрения игрока)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "(Скриншот с расстоянием обзора 1024 с точки зрения игрока)",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Технические примечания",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Этот раздел очень технический, и не ожидается, что игроки это поймут, но он может помочь вашему техническому другу/участнику сообщества помочь вам определить, достаточно ли вашего компьютера/ноутбука.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Hytale — это воксельная игра-песочница, а это означает, что она больше заботится о производительности процессора и оперативной памяти, чем во многих других играх. Как только ваш графический процессор будет соответствовать нашим минимальным требованиям, модернизация вашего процессора (и наличие достаточного количества системной памяти) обычно поможет больше, чем покупка еще более быстрой видеокарты.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Внутри Hytale создает большие атласы текстур (большие комбинированные текстуры) и хранит большую часть мировой геометрии в VRAM. Более высокие расстояния обзора увеличивают это использование. Вот почему у некоторых графических процессоров заканчивается видеопамять или они начинают тормозить, даже если на бумаге они выглядят нормально.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Как правило:",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Убедитесь, что ваш графический процессор соответствует нашему указанному минимуму (включая видеопамять) или превышает его. На ноутбуках отдавайте предпочтение выделенному (дискретному) графическому процессору, а не встроенному. После этого сосредоточьтесь на надежном многоядерном процессоре и достаточном количестве оперативной памяти, а не на топовом графическом процессоре.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Наша работа по оптимизации продолжается",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы еще не закончили оптимизацию Hytale. Графика, симуляция мира, поведение памяти, нагрузка на графический процессор и многое другое все еще находится в стадии настройки. Ожидайте дальнейшего улучшения производительности по мере прохождения раннего доступа и далее. Наша миссия — постоянно улучшать производительность Hytale.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Чего ожидать дальше",
+        "style": "header"
+      },
+      {
+        "type": "text",
+        "content": "Мы все еще работаем над системными требованиями для Mac и Linux, которые мы намерены поддерживать для старых компьютеров Mac (процессоры Intel) и новых компьютеров Mac с M1+ (процессоры Apple). Мы будем обновлять этот пост по мере получения новых данных.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Мы получили много запросов о Steamdeck, но у нас также нет возможности протестировать ее прямо сейчас, и мы не планируем запускать ее в Steam, пока не определим нашу способность соблюдать политики Steam. На бумаге это должно работать на Steamdeck, но нам также не хватает хороших сопоставлений ввода и небольшого пользовательского интерфейса, поэтому мы еще раз попросим немного терпения.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Эти требования будут обновляться по мере оптимизации в раннем доступе. Наша цель — сделать так, чтобы Hytale хорошо работала на самых разных системах без ущерба для масштабируемости и модифицируемости.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "Если у вас есть компьютер, который не очень хорошо работает в одиночной игре, вам следует присоединиться к другу и играть с ним в одиночной игре или играть на онлайн-серверах, поскольку они показывают лучшую производительность.",
+        "style": "normal"
+      },
+      {
+        "type": "text",
+        "content": "~ Команда Хайтейл",
+        "style": "normal"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_abb62f3055672416aec9b17b97b01b4e_hardware_req_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_53c3b1c4954eb5f8ecf24681d3be8586_header2.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_477eaf50273a8db52724a3fda19a9bf2_modding_banner.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_14e7ce9586e3303868aee27293ba4591_hytale_cursebreaker_key_art_2k.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_1add7a5021e3a42191a30ddc98653d28_header_spring_2025_dev_update.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5efa372e65522954368269461f0f6c8f_winter2024header.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_8784c65ad7551359132cda3879f5e3b0_lp_header.png"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_5c3aa9e9095cfd50aff3f6ca275761b2_summer2024_header_5.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_e82dccfffc8df9677ab407f12e3b781f_tech_blog_flecs_header_updated.jpg"
+      },
+      {
+        "type": "img",
+        "src": "https://cdn.hytale.com/variants/blog_thumb_9ec7d3895b7a19a95fdf4b7829d57cde_blogpost_image_early_access__1_.png"
       }
     ]
   }

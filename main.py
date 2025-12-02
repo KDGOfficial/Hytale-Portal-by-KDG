@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox, scrolledtext
+from tkinter import messagebox, scrolledtext, ttk
 import requests
 import feedparser
 from datetime import datetime
@@ -12,7 +12,9 @@ import os
 from urllib.parse import quote_plus
 import time
 from io import BytesIO
-from PIL import Image, ImageTk                     
+from PIL import Image, ImageTk
+import pygame
+from mutagen import File as MutagenFile                     
 
                    
 HYTALE_API_URL = "https://hytale.com/api/blog/post/published"
@@ -20,7 +22,7 @@ RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
 CACHE_FILE = "news_cache_v3.json"      
 
 APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.1.4-KDG"
+APP_VERSION = "1.2.0-KDG"
 
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
@@ -78,6 +80,18 @@ class HytaleApp:
         self.news_cache = self.load_cache()
         self.translator = None
         self.image_refs = []                            
+        # Music player related
+        self.music_folder = os.path.join(os.getcwd(), 'Music')
+        self.music_files = []
+        self.music_index = 0
+        # Using pygame for audio playback
+        self.pygame_available = False
+        self.is_muted = False
+        self._is_paused = False
+        self.favorites_file = 'music_favorites.json'
+        self.favorites = set()
+        self._last_playing_state = False
+        self._volume = 0.21  # Default volume set to 21%
 
                                                               
         try:
@@ -136,6 +150,9 @@ class HytaleApp:
 
         self.update_timer()
         self.start_update()
+
+        # Initialize music player asynchronously so it doesn't block UI
+        threading.Thread(target=self._init_music_player, daemon=True).start()
 
     def load_cache(self):
         if os.path.exists(CACHE_FILE):
@@ -527,6 +544,500 @@ class HytaleApp:
 
         self.root.after(0, lambda: self.refresh_btn.config(state='normal', text='🔄 ОБНОВИТЬ'))
         self.root.after(0, lambda: self.status_bar.config(text=f"Обновлено: {datetime.now().strftime('%H:%M:%S')}") )
+
+    # ------------------------ Music Player -----------------------------
+    def _init_music_player(self):
+        # Initialize pygame embedded audio backend (pygame + mutagen)
+        try:
+            # Initialize pygame mixer
+            pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=2048)
+            
+            # Set default volume to 21%
+            self._volume = 0.21
+            self._prev_volume = self._volume  # Initialize previous volume
+            pygame.mixer.music.set_volume(self._volume)
+            
+            self.pygame_available = True
+            self._is_paused = True  # Start paused until user interacts
+            self.is_muted = False
+            
+            print('pygame mixer initialized with 21% volume')
+            
+            # Create music folder if it doesn't exist
+            if not os.path.exists(self.music_folder):
+                try:
+                    os.makedirs(self.music_folder)
+                except Exception as e:
+                    print(f'Error creating music folder: {e}')
+            
+            # Scan for music files and load favorites
+            self._scan_music_files()
+            self._load_favorites()
+            
+            # Autoplay first track if available
+            if self.music_files:
+                self.music_index = 0
+                self._play_index(self.music_index, set_volume=21)
+            
+            # Add player controls to the main window
+            self._add_main_player_controls()
+            
+        except Exception as e:
+            print('pygame/mutagen init failed:', e)
+            self.pygame_available = False
+            self.status_bar.config(text='Аудио недоступно. Установите pygame и mutagen для воспроизведения музыки.')
+            # Disable buttons if they exist
+            if hasattr(self, 'mute_btn'):
+                self.mute_btn.config(state='disabled')
+            if hasattr(self, 'open_player_btn'):
+                self.open_player_btn.config(state='disabled')
+            return
+
+    def _scan_music_files(self):
+        exts = ('.mp3', '.ogg', '.wav', '.flac', '.aac', '.m4a')
+        files = []
+        try:
+            for fname in sorted(os.listdir(self.music_folder)):
+                if fname.lower().endswith(exts):
+                    files.append(os.path.join(self.music_folder, fname))
+        except Exception as e:
+            print('Error scanning music folder:', e)
+        self.music_files = files
+        return files
+
+    def _load_favorites(self):
+        try:
+            if os.path.exists(self.favorites_file):
+                with open(self.favorites_file, 'r', encoding='utf-8') as f:
+                    favs = json.load(f)
+                    if isinstance(favs, list):
+                        self.favorites = set(favs)
+        except Exception as e:
+            print('Failed to load favorites:', e)
+
+    # settings handling removed (pygame-only player)
+
+    def _save_favorites(self):
+        try:
+            with open(self.favorites_file, 'w', encoding='utf-8') as f:
+                json.dump(list(self.favorites), f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print('Failed to save favorites:', e)
+
+    def _add_main_player_controls(self):
+        # Add music player controls to the main window
+        controls_frame = tk.Frame(self.root, bg=self.colors['bg'])
+        controls_frame.pack(fill='x', padx=10, pady=5)
+        
+        # Mute/Unmute button
+        self.mute_btn = tk.Button(controls_frame, text=' Музыка: Вкл', 
+                                 command=self._toggle_mute,
+                                 bg=self.colors['card_bg'], fg=self.colors['text'],
+                                 relief='flat', font=('Segoe UI', 9))
+        self.mute_btn.pack(side='left', padx=5)
+        
+        # Open player button
+        self.open_player_btn = tk.Button(controls_frame, text='🎵 Открыть плеер', 
+                                        command=self.open_player_window,
+                                        bg=self.colors['accent'], fg='#111',
+                                        relief='flat', font=('Segoe UI', 9, 'bold'))
+        self.open_player_btn.pack(side='right', padx=5)
+        
+        # Set initial states
+        if not self.pygame_available:
+            self.mute_btn.config(state='disabled')
+            self.open_player_btn.config(state='disabled')
+            
+    def _toggle_mute(self):
+        if not self.pygame_available or not self.music_files:
+            return
+            
+        if not hasattr(self, '_prev_volume'):
+            self._prev_volume = self._volume
+            
+        if not self.is_muted:
+            # If not muted, stop the music and store the current track
+            if pygame.mixer.music.get_busy() and not self._is_paused:
+                self._last_playing_index = self.music_index
+                pygame.mixer.music.stop()
+                self._is_paused = True
+            self.is_muted = True
+            self.mute_btn.config(text='🔇 Музыка: Выкл')
+        else:
+            # If muted, resume playback from the last track
+            self.is_muted = False
+            self.mute_btn.config(text='🔊 Музыка: Вкл')
+            if hasattr(self, '_last_playing_index') and self._last_playing_index is not None:
+                self._play_index(self._last_playing_index)
+            else:
+                self._play_index(0)
+
+    def _play_index(self, index, set_volume=None):
+        if not self.pygame_available or not self.music_files: 
+            return
+            
+        if index < 0 or index >= len(self.music_files): 
+            return
+            
+        self.music_index = index
+        path = self.music_files[index]
+        
+        try:
+            # Stop any currently playing music
+            pygame.mixer.music.stop()
+            
+            # Load the new track
+            pygame.mixer.music.load(path)
+            
+            # Set volume (default to 21% if not specified)
+            if set_volume is not None:
+                try:
+                    self._volume = max(0.0, min(1.0, float(set_volume) / 100.0))
+                except (ValueError, TypeError):
+                    self._volume = 0.21
+            
+            # Apply volume and start playback
+            pygame.mixer.music.set_volume(self._volume)
+            pygame.mixer.music.play()
+            self._is_paused = False
+            
+            # Update UI
+            self._update_ui_after_play()
+            
+            # Update volume display if player window is open
+            if hasattr(self, '_player_vol_scale'):
+                self._player_vol_scale.set(int(self._volume * 100))
+            if hasattr(self, '_player_vol_pct'):
+                self._player_vol_pct.config(text=f"{int(self._volume * 100)}%")
+            
+        except Exception as e:
+            print(f'Playback error: {e}')
+            self.status_bar.config(text=f'Ошибка воспроизведения: {str(e)}')
+    
+    def _update_ui_after_play(self):
+        """Update UI elements after changing tracks"""
+        if hasattr(self, '_player_play_button'):
+            self._player_play_button.config(text='⏸')
+        
+        if hasattr(self, '_player_lbl') and self.music_files:
+            self._player_lbl.config(text=os.path.basename(self.music_files[self.music_index]))
+        
+        # Update listbox selection
+        if hasattr(self, '_player_listbox_all'):
+            self._select_current_in_lists()
+
+    def _play_next(self):
+        if not self.music_files: return
+        self.music_index = (self.music_index + 1) % len(self.music_files)
+        self._play_index(self.music_index)
+
+    def _play_prev(self):
+        if not self.music_files: return
+        self.music_index = (self.music_index - 1) % len(self.music_files)
+        self._play_index(self.music_index)
+
+    def _toggle_play_pause(self, btn=None):
+        if not self.pygame_available or not self.music_files:
+            return
+            
+        try:
+            if self._is_paused:
+                # If paused, unpause
+                pygame.mixer.music.unpause()
+                self._is_paused = False
+                if btn:
+                    btn.config(text='⏸')
+                self.status_bar.config(text='Воспроизведение')
+            else:
+                # If playing, pause
+                if pygame.mixer.music.get_busy():
+                    pygame.mixer.music.pause()
+                    self._is_paused = True
+                    if btn:
+                        btn.config(text='▶')
+                    self.status_bar.config(text='Пауза')
+                else:
+                    # If stopped, start playing current track
+                    self._play_index(self.music_index)
+        except Exception as e:
+            print(f'Error in _toggle_play_pause: {e}')
+            self.status_bar.config(text=f'Ошибка: {str(e)}')
+
+    def open_player_window(self, event=None):
+        """Complete player window with playlist, favorites, controls, volume, and seek."""
+        if not self.pygame_available:
+            messagebox.showerror('Ошибка', 'pygame и mutagen не установлены.')
+            return
+        if not self.music_files:
+            messagebox.showinfo('Музыка', 'В папке Music нет треков.')
+            return
+
+        w = tk.Toplevel(self.root)
+        w.title('Плеер')
+        w.geometry('800x400')
+        w.configure(bg=self.colors['bg'])
+
+        # Track name label
+        track_lbl = tk.Label(w, text=os.path.basename(self.music_files[self.music_index]),
+                            bg=self.colors['card_bg'], fg=self.colors['text'], font=('Cinzel', 13, 'bold'))
+        track_lbl.pack(fill='x', padx=8, pady=(8, 4))
+
+        # Control buttons
+        btn_frame = tk.Frame(w, bg=self.colors['card_bg'])
+        btn_frame.pack(pady=6)
+
+        def on_prev():
+            self._play_prev()
+            track_lbl.config(text=os.path.basename(self.music_files[self.music_index]))
+            _refresh_lists()
+
+        def on_play_pause():
+            self._toggle_play_pause(play_btn)
+            track_lbl.config(text=os.path.basename(self.music_files[self.music_index]))
+
+        def on_next():
+            self._play_next()
+            track_lbl.config(text=os.path.basename(self.music_files[self.music_index]))
+            _refresh_lists()
+
+        tk.Button(btn_frame, text='⏮', command=on_prev, bg=self.colors['card_bg'],
+                 fg=self.colors['text'], width=3, font=('Arial', 11, 'bold'), relief='flat').pack(side='left', padx=4)
+
+        play_btn = tk.Button(btn_frame, text='⏸', command=on_play_pause, bg=self.colors['accent'],
+                            fg='#111', width=4, font=('Arial', 12, 'bold'), relief='flat')
+        play_btn.pack(side='left', padx=4)
+
+        tk.Button(btn_frame, text='⏭', command=on_next, bg=self.colors['card_bg'],
+                 fg=self.colors['text'], width=3, font=('Arial', 11, 'bold'), relief='flat').pack(side='left', padx=4)
+
+        # Favorite button
+        def toggle_fav():
+            if self.music_files:
+                path = self.music_files[self.music_index]
+                if path in self.favorites:
+                    self.favorites.remove(path)
+                else:
+                    self.favorites.add(path)
+                self._save_favorites()
+                fav_btn.config(text='★' if path in self.favorites else '☆')
+                _refresh_lists()
+
+        fav_btn = tk.Button(btn_frame, text='★' if self.music_files and self.music_files[self.music_index] in self.favorites else '☆',
+                           command=toggle_fav, bg=self.colors['card_bg'], fg=self.colors['text'],
+                           width=3, font=('Arial', 11), relief='flat')
+        fav_btn.pack(side='left', padx=4)
+
+        # Main container
+        main_frame = tk.Frame(w, bg=self.colors['bg'])
+        main_frame.pack(fill='both', expand=True, padx=8, pady=6)
+
+        # LEFT: Playlist tabs
+        left_frame = tk.Frame(main_frame, bg=self.colors['card_bg'])
+        left_frame.pack(side='left', fill='y', padx=(0, 8))
+
+        notebook = ttk.Notebook(left_frame)
+        notebook.pack(fill='both', expand=True, padx=4, pady=4)
+
+        all_tab = tk.Frame(notebook, bg=self.colors['card_bg'])
+        fav_tab = tk.Frame(notebook, bg=self.colors['card_bg'])
+        notebook.add(all_tab, text='Все')
+        notebook.add(fav_tab, text='Избранное')
+
+        listbox_all = tk.Listbox(all_tab, bg=self.colors['video_bg'], fg=self.colors['text'],
+                                highlightthickness=0, bd=0, activestyle='none')
+        listbox_all.pack(fill='both', expand=True, padx=4, pady=4)
+
+        listbox_fav = tk.Listbox(fav_tab, bg=self.colors['video_bg'], fg=self.colors['text'],
+                                highlightthickness=0, bd=0, activestyle='none')
+        listbox_fav.pack(fill='both', expand=True, padx=4, pady=4)
+
+        def _refresh_lists():
+            listbox_all.delete(0, tk.END)
+            listbox_fav.delete(0, tk.END)
+            for path in self.music_files:
+                name = os.path.basename(path)
+                display = f"★ {name}" if path in self.favorites else name
+                listbox_all.insert(tk.END, display)
+                if path in self.favorites:
+                    listbox_fav.insert(tk.END, name)
+
+        def _on_listbox_play(event, lb):
+            sel = lb.curselection()
+            if not sel:
+                return
+            idx = sel[0]
+            if lb is listbox_all:
+                self.music_index = idx
+            else:
+                # Find by name in fav
+                name = lb.get(idx)
+                for i, p in enumerate(self.music_files):
+                    if os.path.basename(p) == name:
+                        self.music_index = i
+                        break
+            self._play_index(self.music_index)
+            track_lbl.config(text=os.path.basename(self.music_files[self.music_index]))
+            fav_btn.config(text='★' if self.music_files[self.music_index] in self.favorites else '☆')
+            _refresh_lists()
+
+        listbox_all.bind('<Double-Button-1>', lambda e: _on_listbox_play(e, listbox_all))
+        listbox_fav.bind('<Double-Button-1>', lambda e: _on_listbox_play(e, listbox_fav))
+        _refresh_lists()
+
+        # RIGHT: Controls
+        right_frame = tk.Frame(main_frame, bg=self.colors['card_bg'])
+        right_frame.pack(side='left', fill='both', expand=True)
+
+        # Volume
+        vol_frame = tk.Frame(right_frame, bg=self.colors['card_bg'])
+        vol_frame.pack(fill='x', padx=8, pady=4)
+        tk.Label(vol_frame, text='Громкость:', bg=self.colors['card_bg'], fg=self.colors['text']).pack(side='left')
+
+        vol_scale = tk.Scale(vol_frame, from_=0, to=100, orient='horizontal', bg=self.colors['card_bg'],
+                            fg=self.colors['text'], length=200)
+        vol_scale.set(int(self._volume * 100))
+        vol_scale.pack(side='left', padx=8)
+
+        vol_pct_lbl = tk.Label(vol_frame, text=f"{int(self._volume * 100)}%",
+                              bg=self.colors['card_bg'], fg=self.colors['text'], width=3)
+        vol_pct_lbl.pack(side='left')
+
+        def _on_vol_change(v):
+            pct = int(float(v))
+            self._set_volume(pct)
+            vol_pct_lbl.config(text=f"{pct}%")
+
+        vol_scale.config(command=_on_vol_change)
+
+        # Seek bar
+        time_frame = tk.Frame(right_frame, bg=self.colors['card_bg'])
+        time_frame.pack(fill='x', padx=8, pady=4)
+
+        time_left = tk.Label(time_frame, text='00:00', bg=self.colors['card_bg'], fg=self.colors['text'], width=5)
+        time_left.pack(side='left')
+
+        seek_var = tk.DoubleVar()
+        seek_scale = ttk.Scale(time_frame, from_=0, to=1000, orient='horizontal', variable=seek_var)
+        seek_scale.pack(side='left', fill='x', expand=True, padx=6)
+
+        time_right = tk.Label(time_frame, text='00:00', bg=self.colors['card_bg'], fg=self.colors['text'], width=5)
+        time_right.pack(side='left')
+
+        seek_dragging = [False]
+
+        def _on_seek_press(e):
+            seek_dragging[0] = True
+
+        def _on_seek_release(e):
+            if seek_dragging[0]:
+                seek_dragging[0] = False
+                pct = seek_var.get() / 1000.0
+                self._seek_to_pct(pct)
+
+        seek_scale.bind('<ButtonPress-1>', _on_seek_press)
+        seek_scale.bind('<ButtonRelease-1>', _on_seek_release)
+
+        def _update_ui():
+            """Update seek bar and time labels."""
+            if seek_dragging[0]:
+                w.after(200, _update_ui)
+                return
+
+            length_ms = self._get_current_length_ms()
+            pos_ms = 0
+
+            try:
+                if self.pygame_available and pygame.mixer.music.get_busy():
+                    pos_ms = int(pygame.mixer.music.get_pos() or 0)
+            except:
+                pass
+
+            if length_ms > 0:
+                pct = (pos_ms / length_ms) * 1000
+                seek_var.set(min(max(int(pct), 0), 1000))
+                time_left.config(text=self._ms_to_str(pos_ms))
+                time_right.config(text=self._ms_to_str(length_ms))
+
+                # Auto-advance near end
+                if pos_ms > 0 and (length_ms - pos_ms) < 500:
+                    self._play_next()
+                    track_lbl.config(text=os.path.basename(self.music_files[self.music_index]))
+                    _refresh_lists()
+
+            w.after(200, _update_ui)
+
+        _update_ui()
+
+    def _ms_to_str(self, ms):
+        """Convert milliseconds to 'MM:SS' format."""
+        if not ms or ms <= 0:
+            return '00:00'
+        s = int(ms // 1000)
+        m, s = divmod(s, 60)
+        return f'{m:02}:{s:02}'
+
+    def _get_current_length_ms(self):
+        """Get current track length in milliseconds using mutagen."""
+        try:
+            if not self.music_files:
+                return 0
+            path = self.music_files[self.music_index]
+            audio = MutagenFile(path)
+            if audio and getattr(audio, 'info', None):
+                return int(audio.info.length * 1000)
+        except Exception:
+            pass
+        return 0
+
+    def _get_volume_percent(self):
+        """Get current volume as percentage."""
+        try:
+            if self.pygame_available:
+                return int(self.pygame.mixer.music.get_volume() * 100)
+        except Exception:
+            pass
+        return int(self._volume * 100)
+
+    def _set_volume(self, percent):
+        """Set volume by percentage (0-100)."""
+        p = max(0, min(100, int(percent)))
+        self._volume = p / 100.0
+        try:
+            if self.pygame_available:
+                self.pygame.mixer.music.set_volume(self._volume)
+            self.status_bar.config(text=f'Громкость: {p}%')
+        except Exception as e:
+            print(f'Volume error: {e}')
+
+    def _seek_to_pct(self, pct):
+        """Seek to position (0-1 percentage of track)."""
+        if not self.pygame_available or not self.music_files:
+            return
+
+        try:
+            length_ms = self._get_current_length_ms()
+            if length_ms <= 0:
+                return
+
+            pos_sec = (pct * length_ms) / 1000.0
+
+            try:
+                # Stop current playback
+                pygame.mixer.music.stop()
+                # Load and seek
+                pygame.mixer.music.load(self.music_files[self.music_index])
+                pygame.mixer.music.play(loops=0, start=pos_sec)
+                
+                # Restore state
+                pygame.mixer.music.set_volume(self._volume)
+                if self._is_paused:
+                    pygame.mixer.music.pause()
+
+                self.status_bar.config(text=f'Перемотка: {self._ms_to_str(int(pct * length_ms))}')
+            except Exception as e:
+                print(f'Seek error: {e}')
+        except Exception as e:
+            print(f'Error in _seek_to_pct: {e}')
 
     def clear_frame(self, frame):
         for w in frame.winfo_children(): w.destroy()
