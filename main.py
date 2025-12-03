@@ -901,11 +901,14 @@ class HytaleApp:
         vol_pct_lbl = tk.Label(vol_frame, text=f"{int(self._volume * 100)}%",
                               bg=self.colors['card_bg'], fg=self.colors['text'], width=3)
         vol_pct_lbl.pack(side='left')
+        
+        # Store volume controls for external access
+        self._player_vol_scale = vol_scale
+        self._player_vol_pct = vol_pct_lbl
 
         def _on_vol_change(v):
             pct = int(float(v))
             self._set_volume(pct)
-            vol_pct_lbl.config(text=f"{pct}%")
 
         vol_scale.config(command=_on_vol_change)
 
@@ -1004,8 +1007,15 @@ class HytaleApp:
         self._volume = p / 100.0
         try:
             if self.pygame_available:
-                self.pygame.mixer.music.set_volume(self._volume)
+                pygame.mixer.music.set_volume(self._volume)  # Fixed: Use pygame directly, not self.pygame
             self.status_bar.config(text=f'Громкость: {p}%')
+            
+            # Update volume in player window if open
+            if hasattr(self, '_player_vol_scale') and self._player_vol_scale.get() != p:
+                self._player_vol_scale.set(p)
+            if hasattr(self, '_player_vol_pct'):
+                self._player_vol_pct.config(text=f"{p}%")
+                
         except Exception as e:
             print(f'Volume error: {e}')
 
