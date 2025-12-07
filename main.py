@@ -22,7 +22,7 @@ RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
 CACHE_FILE = "news_cache_v3.json"      
 
 APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.2.0-KDG"
+APP_VERSION = "1.2.2-KDG"
 
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
@@ -134,9 +134,25 @@ class HytaleApp:
         self.refresh_btn = tk.Button(root, text='🔄 ОБНОВИТЬ', command=self.start_update,
                                      bg=self.colors['accent'], fg='#111', font=('Segoe UI', 10, 'bold'), relief='flat', padx=14, pady=7)
         self.refresh_btn.pack(pady=12)
+        
+        # Clear cache button
         self.clear_cache_btn = tk.Button(root, text='🧹 ОЧИСТИТЬ КЭШ', command=self.clear_cache,
-                                         bg=self.colors['card_bg'], fg=self.colors['text'], font=('Arial', 9), relief='ridge', bd=1)
-        self.clear_cache_btn.pack(pady=(0,8))
+                                       bg=self.colors['card_bg'], fg=self.colors['text'], font=('Arial', 9), relief='ridge', bd=1)
+        self.clear_cache_btn.pack(pady=(0, 8))
+        
+        # Centered frame for music controls
+        self.music_controls_frame = tk.Frame(root, bg=self.colors['bg'])
+        self.music_controls_frame.pack(pady=(0, 8))
+        
+        # Music toggle button
+        self.music_toggle_btn = tk.Button(self.music_controls_frame, text='Музыка: Выкл', command=self._toggle_music,
+                                        bg=self.colors['card_bg'], fg=self.colors['text'], font=('Arial', 9), relief='ridge', bd=1)
+        self.music_toggle_btn.pack(side='left', padx=2)
+        
+        # Open player button
+        self.player_btn = tk.Button(self.music_controls_frame, text='ОТКРЫТЬ ПЛЕЕР🎵', command=self.open_player_window,
+                                   bg='#f3d983', fg='#111', font=('Arial', 9, 'bold'), relief='flat', padx=10)
+        self.player_btn.pack(side='left', padx=2)
 
         footer = tk.Frame(root, bg=self.colors['bg'])
         footer.pack(side='bottom', fill='x')
@@ -625,36 +641,46 @@ class HytaleApp:
             print('Failed to save favorites:', e)
 
     def _add_main_player_controls(self):
-        # Add music player controls to the main window
-        controls_frame = tk.Frame(self.root, bg=self.colors['bg'])
-        controls_frame.pack(fill='x', padx=10, pady=5)
-        
-        # Mute/Unmute button
-        self.mute_btn = tk.Button(controls_frame, text=' Музыка: Вкл', 
-                                 command=self._toggle_mute,
-                                 bg=self.colors['card_bg'], fg=self.colors['text'],
-                                 relief='flat', font=('Segoe UI', 9))
-        self.mute_btn.pack(side='left', padx=5)
-        
-        # Open player button
-        self.open_player_btn = tk.Button(controls_frame, text='🎵 Открыть плеер', 
-                                        command=self.open_player_window,
-                                        bg=self.colors['accent'], fg='#111',
-                                        relief='flat', font=('Segoe UI', 9, 'bold'))
-        self.open_player_btn.pack(side='right', padx=5)
-        
-        # Set initial states
-        if not self.pygame_available:
-            self.mute_btn.config(state='disabled')
-            self.open_player_btn.config(state='disabled')
+        # This method is kept for compatibility but doesn't add any controls
+        # All controls are now in the centered music_controls_frame
+        pass
             
-    def _toggle_mute(self):
-        if not self.pygame_available or not self.music_files:
+    def _toggle_music(self):
+        if not hasattr(self, 'pygame_available') or not self.pygame_available:
+            messagebox.showinfo('Музыка', 'Аудиоплеер недоступен')
             return
             
-        if not hasattr(self, '_prev_volume'):
-            self._prev_volume = self._volume
+        if not hasattr(self, '_is_paused'):
+            self._is_paused = True
             
+        if self._is_paused:
+            # If music is paused, resume or start playing
+            if pygame.mixer.music.get_busy():
+                # If music is loaded but paused, unpause it
+                pygame.mixer.music.unpause()
+            else:
+                # If no music is playing, start playing from current index
+                if not hasattr(self, 'music_files') or not self.music_files:
+                    messagebox.showinfo('Музыка', 'Нет доступных аудиофайлов')
+                    return
+                if not hasattr(self, 'music_index'):
+                    self.music_index = 0
+                self._play_index(self.music_index)
+            self.music_toggle_btn.config(text='Музыка: Вкл')
+        else:
+            # Pause the music if it's playing
+            if pygame.mixer.music.get_busy():
+                pygame.mixer.music.pause()
+            self.music_toggle_btn.config(text='Музыка: Выкл')
+            
+        self._is_paused = not self._is_paused
+
+    def _toggle_mute(self):
+        if not self.pygame_available: return
+        self.is_muted = not self.is_muted
+        pygame.mixer.music.set_volume(0 if self.is_muted else self._volume)
+        self._update_ui()
+        
         if not self.is_muted:
             # If not muted, stop the music and store the current track
             if pygame.mixer.music.get_busy() and not self._is_paused:
