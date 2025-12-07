@@ -1,8 +1,9 @@
-requests
-feedparser
-beautifulsoup4
-Pillow
-pywebview
-googletrans
-pygame
-mutagen
+requests>=2.31.0
+feedparser>=6.0.10
+beautifulsoup4>=4.12.2
+Pillow>=10.0.0
+pywebview>=4.4.1
+googletrans>=3.1.0a0
+pygame>=2.5.0
+mutagen>=1.47.0
+tweepy>=4.14.0
