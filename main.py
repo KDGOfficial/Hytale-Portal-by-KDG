@@ -22,7 +22,11 @@ RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
 CACHE_FILE = "news_cache_v3.json"      
 
 APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.2.2-KDG"
+APP_VERSION = "1.3.1"
+
+TELEGRAM_CHANNELS = [
+    {'name': 'Джет Hytale', 'username': 'jetikhytale', 'url': 'https://t.me/jetikhytale'}
+]
 
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
@@ -153,6 +157,23 @@ class HytaleApp:
         self.player_btn = tk.Button(self.music_controls_frame, text='ОТКРЫТЬ ПЛЕЕР🎵', command=self.open_player_window,
                                    bg='#f3d983', fg='#111', font=('Arial', 9, 'bold'), relief='flat', padx=10)
         self.player_btn.pack(side='left', padx=2)
+        
+        # Telegram news button with Telegram branding
+        self.telegram_icon = self.create_telegram_icon()
+        
+        self.telegram_btn = tk.Button(
+            self.music_controls_frame,
+            text="Новости из Telegram",
+            command=self.open_telegram_news,
+            bg='#0088CC',  # Telegram's brand color
+            fg='white',
+            font=('Arial', 9, 'bold'),
+            relief='flat',
+            padx=12,
+            compound='left',
+            image=self.telegram_icon
+        )
+        self.telegram_btn.pack(side='left', padx=2, pady=2)
 
         footer = tk.Frame(root, bg=self.colors['bg'])
         footer.pack(side='bottom', fill='x')
@@ -170,6 +191,16 @@ class HytaleApp:
         # Initialize music player asynchronously so it doesn't block UI
         threading.Thread(target=self._init_music_player, daemon=True).start()
 
+    def create_telegram_icon(self):
+        """Create and return a PhotoImage object for the Telegram icon"""
+        try:
+            img = Image.open('Telegram_logo.svg.webp')
+            img = img.resize((16, 16), Image.Resampling.LANCZOS)
+            return ImageTk.PhotoImage(img)
+        except Exception as e:
+            print(f"Error loading Telegram icon: {e}")
+            return None
+            
     def load_cache(self):
         if os.path.exists(CACHE_FILE):
             try:
@@ -996,6 +1027,185 @@ class HytaleApp:
             w.after(200, _update_ui)
 
         _update_ui()
+
+    def update_telegram_html(self):
+        """Update the HTML file with Telegram channel posts"""
+        try:
+            # Path to HTML file
+            html_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'news_from_x.html')
+            
+            # HTML template
+            html_content = f"""
+            <!DOCTYPE html>
+            <html lang="ru">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Новости Hytale из X (Twitter)</title>
+                <style>
+                    body {{
+                        font-family: 'Segoe UI', Arial, sans-serif;
+                        line-height: 1.6;
+                        color: #e7f4ff;
+                        background-color: #030b14;
+                        max-width: 900px;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }}
+                    .header {{
+                        text-align: center;
+                        margin-bottom: 30px;
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid #f3d983;
+                    }}
+                    .account-card {{
+                        background-color: #0c1520;
+                        border-radius: 8px;
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                    }}
+                    .account-header {{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 15px;
+                        border-bottom: 1px solid #1a2a3a;
+                        padding-bottom: 10px;
+                    }}
+                    .account-name {{
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #f3d983;
+                        margin: 0;
+                    }}
+                    .account-handle {{
+                        color: #a1b7d0;
+                        margin-left: 10px;
+                    }}
+                    .account-link {{
+                        color: #a8e0ff;
+                        text-decoration: none;
+                        margin-left: auto;
+                        background-color: #1a3a5a;
+                        padding: 5px 15px;
+                        border-radius: 15px;
+                        font-size: 14px;
+                        transition: background-color 0.3s;
+                    }}
+                    .account-link:hover {{
+                        background-color: #2a4a6a;
+                    }}
+                    .tweet {{
+                        background-color: #0f1c2a;
+                        border-radius: 8px;
+                        padding: 15px;
+                        margin-bottom: 15px;
+                    }}
+                    .tweet-text {{
+                        margin-bottom: 10px;
+                    }}
+                    .tweet-date {{
+                        color: #a1b7d0;
+                        font-size: 12px;
+                    }}
+                    .last-updated {{
+                        text-align: right;
+                        color: #a1b7d0;
+                        font-size: 12px;
+                        margin-top: 30px;
+                        padding-top: 10px;
+                        border-top: 1px solid #1a2a3a;
+                    }}
+                    .refresh-btn {{
+                        display: block;
+                        width: 200px;
+                        margin: 20px auto;
+                        padding: 10px;
+                        background-color: #f3d983;
+                        color: #111;
+                        text-align: center;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }}
+                </style>
+            </head>
+            <body>
+                <div class="header">
+                    <h1>Последние новости Hytale из Telegram</h1>
+                    <p>Обновлено: {datetime.now().strftime('%d.%m.%Y %H:%M')}</p>
+                    <a href="#" onclick="window.location.reload();" class="refresh-btn">🔄 Обновить</a>
+                </div>
+            """
+
+            # Add account information
+            for account in TWITTER_ACCOUNTS:
+                html_content += f"""
+                <div class="account-card">
+                    <div class="account-header">
+                        <div>
+                            <span class="account-name">{account['name']}</span>
+                            <span class="account-handle">@{account['handle']}</span>
+                        </div>
+                        <a href="{account['url']}" class="account-link" target="_blank">Открыть в X</a>
+                    </div>
+                    <div class="tweet">
+                        <p class="tweet-text">Для отображения твитов в приложении необходимо настроить Twitter API v2.</p>
+                        <p class="tweet-text">Нажмите на кнопку "Открыть в X" для просмотра последних твитов.</p>
+                    </div>
+                </div>
+                """
+
+            # Close HTML
+            html_content += """
+                <div class="last-updated">
+                    <p>KDG Hytale Portal • Автоматически обновляется при открытии</p>
+                </div>
+                <script>
+                    // Auto-refresh page every 5 minutes
+                    setTimeout(function() {
+                        window.location.reload();
+                    }, 300000); // 5 minutes
+                </script>
+            </body>
+            </html>
+            """
+
+            # Save HTML file
+            with open(html_path, 'w', encoding='utf-8') as f:
+                f.write(html_content)
+
+            return html_path
+
+        except Exception as e:
+            print(f"Error updating HTML: {e}")
+            return None
+
+    def open_twitter_news(self):
+        """Open the Twitter news HTML file in the default browser"""
+        try:
+            # Update HTML file
+            html_path = self.update_twitter_html()
+            
+            if html_path and os.path.exists(html_path):
+                # Open in default browser
+                webbrowser.open(f'file://{os.path.abspath(html_path)}')
+            else:
+                messagebox.showerror("Ошибка", "Не удалось загрузить новости из X")
+        except Exception as e:
+            messagebox.showerror("Ошибка", f"Не удалось открыть новости: {str(e)}")
+
+    def open_telegram_news(self):
+        """Open the Telegram channel in the default web browser"""
+        try:
+            # Open the Telegram channel in the default web browser
+            webbrowser.open('https://t.me/s/jetikhytale', new=2)  # new=2 opens in a new tab if possible
+            
+            # Show a message that the channel was opened in the browser
+            messagebox.showinfo("Telegram", "Канал 'Джет Hytale' открыт в вашем браузере")
+            
+        except Exception as e:
+            messagebox.showerror("Ошибка", f"Не удалось открыть Telegram: {str(e)}")
 
     def _ms_to_str(self, ms):
         """Convert milliseconds to 'MM:SS' format."""
