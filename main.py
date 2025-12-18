@@ -1,33 +1,40 @@
+# Standard library imports
 import tkinter as tk
 from tkinter import messagebox, scrolledtext, ttk
-import requests
-import feedparser
 from datetime import datetime
 import threading
 import re
 import webbrowser
-from bs4 import BeautifulSoup
 import json
 import os
 from urllib.parse import quote_plus
 import time
 from io import BytesIO
+
+# Third-party library imports
+import requests
+import feedparser
+from bs4 import BeautifulSoup
 from PIL import Image, ImageTk
 import pygame
 from mutagen import File as MutagenFile                     
 
                    
-HYTALE_API_URL = "https://hytale.com/api/blog/post/published"
-RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)
-CACHE_FILE = "news_cache_v3.json"      
+# API and application configuration constants
+HYTALE_API_URL = "https://hytale.com/api/blog/post/published"  # Hytale blog API endpoint
+RELEASE_DATE = datetime(2026, 1, 13, 0, 0, 0)  # Hytale game release date
+CACHE_FILE = "news_cache_v3.json"  # File to store cached news data
 
-APP_NAME = "KDG Hytale Portal"
-APP_VERSION = "1.3.1"
+# Application information
+APP_NAME = "KDG Hytale Portal"  # Application name
+APP_VERSION = "1.3.2"  # Current application version
 
+# List of Telegram channels to fetch news from
 TELEGRAM_CHANNELS = [
     {'name': 'Джет Hytale', 'username': 'jetikhytale', 'url': 'https://t.me/jetikhytale'}
 ]
 
+# YouTube channels to fetch videos from
 CHANNELS_DATA = [
     {"name": "Hytale (Official)", "url": "https://www.youtube.com/@Hytale", "id": "UCgQN2C6x-1AobLFMpewpAZw"},
     {"name": "Jetik Hytale", "url": "https://www.youtube.com/@jetikhytale", "id": "UCwPAi_m6sL9zy_R64_XiHww"},
@@ -35,12 +42,21 @@ CHANNELS_DATA = [
 ]
 
 def extract_youtube_id(url):
+    """
+    Extracts the YouTube video ID from various YouTube URL formats.
+    
+    Args:
+        url (str): The YouTube URL to extract the video ID from
+        
+    Returns:
+        str: The extracted video ID or None if not found
+    """
     if not url:
         return None
     patterns = [
-        r'youtu\.be/([0-9A-Za-z_-]{11})',
-        r'/(?:embed|shorts)/([0-9A-Za-z_-]{11})',
-        r'v=([0-9A-Za-z_-]{11})'
+        r'youtu\.be/([0-9A-Za-z_-]{11})',  # youtu.be/ID format
+        r'/(?:embed|shorts)/([0-9A-Za-z_-]{11})',  # /embed/ID or /shorts/ID format
+        r'v=([0-9A-Za-z_-]{11})'  # v=ID format
     ]
     for pattern in patterns:
         match = re.search(pattern, url)
@@ -49,62 +65,93 @@ def extract_youtube_id(url):
     return None
 
 def normalize_youtube_url(url):
+    """
+    Converts various YouTube URL formats to the standard watch URL format.
+    
+    Args:
+        url (str): Input YouTube URL in any format
+        
+    Returns:
+        str: Standard YouTube watch URL or original URL if conversion fails
+    """
     vid = extract_youtube_id(url)
     if vid:
         return f'https://www.youtube.com/watch?v={vid}'
     return url
 
+# Color scheme for the application UI
 HYTALE_STYLE = {
-    'bg': '#030b14',                           
-    'card_bg': '#0c1520',                    
-    'text': '#e7f4ff',
-    'accent': '#f3d983',                
-    'link': '#a8e0ff',
-    'date': '#a1b7d0',
-    'video_bg': '#091721',
-    'panel': '#0a1b2a'
+    'bg': '#030b14',           # Main background color
+    'card_bg': '#0c1520',      # Background color for cards/panels
+    'text': '#e7f4ff',         # Primary text color
+    'accent': '#f3d983',       # Accent color for highlights and buttons
+    'link': '#a8e0ff',         # Color for hyperlinks
+    'date': '#a1b7d0',         # Color for date text
+    'video_bg': '#091721',     # Background color for video elements
+    'panel': '#0a1b2a'         # Color for panel backgrounds
 }
 
                                              
 
 class HytaleApp:
+    """
+    Main application class for the KDG Hytale Portal.
+    Handles the GUI and all application functionality.
+    """
     def __init__(self, root):
+        """
+        Initialize the Hytale Portal application.
+        
+        Args:
+            root: The root Tkinter window
+        """
         self.root = root
+        # Configure main window properties
         self.root.title(f"{APP_NAME} — v{APP_VERSION}")
-        self.root.geometry("1200x900")
-        self.root.minsize(1024, 720)
-        self.root.state('zoomed')
-        self.root.configure(bg=HYTALE_STYLE['bg'])
+        self.root.geometry("1200x900")  # Default window size
+        self.root.minsize(1024, 720)    # Minimum window size
+        self.root.state('zoomed')       # Start maximized
+        self.root.configure(bg=HYTALE_STYLE['bg'])  # Set background color
 
-        self.colors = HYTALE_STYLE
+        # Initialize application state and settings
+        self.colors = HYTALE_STYLE  # UI color scheme
+        
+        # HTTP headers for web requests to prevent 403 Forbidden errors
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Referer': 'https://hytale.com/',
+            'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
         }
 
-        self.news_cache = self.load_cache()
-        self.translator = None
-        self.image_refs = []                            
-        # Music player related
-        self.music_folder = os.path.join(os.getcwd(), 'Music')
-        self.music_files = []
-        self.music_index = 0
-        # Using pygame for audio playback
-        self.pygame_available = False
-        self.is_muted = False
-        self._is_paused = False
-        self.favorites_file = 'music_favorites.json'
-        self.favorites = set()
-        self._last_playing_state = False
+        # News and content caching
+        self.news_cache = self.load_cache()  # Load cached news data
+        self.translator = None  # Will be initialized if translation is available
+        self.image_refs = []  # Keep references to prevent garbage collection
+        
+        # Music player configuration
+        self.music_folder = os.path.join(os.getcwd(), 'Music')  # Directory for music files
+        self.music_files = []  # List of available music files
+        self.music_index = 0  # Index of currently playing track
+        self.pygame_available = False  # Flag for pygame availability
+        self.is_muted = False  # Mute state
+        self._is_paused = False  # Pause state
+        self.favorites_file = 'music_favorites.json'  # File to store favorite tracks
+        self.favorites = set()  # Set of favorite track indices
+        self._last_playing_state = False  # Previous play/pause state
         self._volume = 0.21  # Default volume set to 21%
 
-                                                              
+        # Initialize translator if available
         try:
             from googletrans import Translator
             try:
+                # Try with specific service URL first
                 self.translator = Translator(service_urls=['translate.googleapis.com'])
             except:
+                # Fall back to default settings
                 self.translator = Translator()
-        except:
+        except ImportError:
+            # Translator not available
             self.translator = None
 
                                         
@@ -202,29 +249,48 @@ class HytaleApp:
             return None
             
     def load_cache(self):
+        """
+        Load cached news data from the cache file.
+        
+        Returns:
+            dict: Cached news data or empty dict if cache doesn't exist or is invalid
+        """
         if os.path.exists(CACHE_FILE):
             try:
                 with open(CACHE_FILE, 'r', encoding='utf-8') as f:
                     return json.load(f)
-            except:
+            except (json.JSONDecodeError, IOError):
+                # Return empty dict if cache is corrupted or unreadable
                 return {}
         return {}
 
     def save_cache(self):
+        """
+        Save the current news cache to a file.
+        
+        Handles any errors that might occur during file operations.
+        """
         try:
             with open(CACHE_FILE, 'w', encoding='utf-8') as f:
                 json.dump(self.news_cache, f, ensure_ascii=False, indent=2)
         except Exception as e:
             print(f"Ошибка сохранения кэша: {e}")
+            # Could add status bar notification here if needed
 
     def clear_cache(self):
-        self.news_cache = {}
+        """
+        Clear the news cache and delete the cache file.
+        Updates the status bar to reflect the operation's success or failure.
+        """
+        self.news_cache = {}  # Clear in-memory cache
         if os.path.exists(CACHE_FILE):
             try:
-                os.remove(CACHE_FILE)
+                os.remove(CACHE_FILE)  # Delete cache file
             except Exception as e:
+                # Show error message if file deletion fails
                 messagebox.showerror('Ошибка', f'Не удалось удалить кэш: {e}')
                 return
+        # Update status bar to show cache was cleared
         self.status_bar.config(text='Кэш очищен')
 
                                                           
@@ -276,20 +342,42 @@ class HytaleApp:
             print('Ошибка загрузки новости:', e)
             return [{'type':'text','content':f'Ошибка загрузки: {e}','style':'error'}]
 
-                     
     def translate_text(self, text):
-        if not text or not text.strip(): return text
+        """
+        Translate text to Russian using available translation services.
+        
+        Args:
+            text (str): Text to be translated
+            
+        Returns:
+            str: Translated text or original text if translation fails
+        """
+        # Return empty or whitespace text as is
+        if not text or not text.strip():
+            return text
+            
+        # Try using the installed translator (googletrans)
         if self.translator:
             try:
-                if getattr(self.translator.detect(text),'lang','') == 'ru': return text
-            except: pass
+                # Skip translation if text is already in Russian
+                if getattr(self.translator.detect(text), 'lang', '') == 'ru':
+                    return text
+            except:
+                pass
+                
             try:
+                # Attempt translation to Russian
                 res = self.translator.translate(text, dest='ru')
-                if getattr(res, 'text', None): return res.text
-            except: pass
+                if getattr(res, 'text', None):
+                    return res.text
+            except:
+                pass
+                
+        # Fallback to direct Google API if available
         try:
             return self._translate_via_googleapi(text)
-        except:
+        except Exception:
+            # Return original text if all translation attempts fail
             return text
 
     def _translate_blocks(self, blocks):
@@ -412,9 +500,22 @@ class HytaleApp:
         try:
             if url.startswith('/'):
                 url = 'https://hytale.com' + url
-            r = requests.get(url, timeout=10)
-            r.raise_for_status()
-            img = Image.open(BytesIO(r.content)).convert('RGBA')
+            try:
+                r = requests.get(url, headers=self.headers, timeout=10)
+                r.raise_for_status()
+                img = Image.open(BytesIO(r.content)).convert('RGBA')
+            except Exception as e:
+                print(f"Error loading image {url}: {e}")
+                # Create a placeholder image
+                img = Image.new('RGBA', (800, 400), (40, 44, 52))
+                from PIL import ImageDraw, ImageFont
+                draw = ImageDraw.Draw(img)
+                try:
+                    font = ImageFont.truetype("arial.ttf", 20)
+                except:
+                    font = ImageFont.load_default()
+                draw.text((50, 50), "Изображение не загружено", fill=(255, 255, 255), font=font)
+                draw.text((50, 80), str(e), fill=(200, 200, 200), font=font)
             target_w = 880
             if img.width > target_w:
                 wpercent = (target_w / float(img.width))
@@ -1302,14 +1403,27 @@ class HytaleApp:
                 try:
                     if not vid:
                         raise ValueError('ID отсутствует')
-                    thumb_url = f'https://img.youtube.com/vi/{vid}/hqdefault.jpg'
-                    r = requests.get(thumb_url, timeout=8)
-                    r.raise_for_status()
-                    img = Image.open(BytesIO(r.content)).convert('RGBA')
-                    target_h = 84
-                    w = int(img.width * (target_h / img.height))
-                    img = img.resize((w, target_h), Image.Resampling.LANCZOS)
-                    ph = ImageTk.PhotoImage(img)
+                    try:
+                        thumb_url = f'https://img.youtube.com/vi/{vid}/hqdefault.jpg'
+                        r = requests.get(thumb_url, headers=self.headers, timeout=8)
+                        r.raise_for_status()
+                        img = Image.open(BytesIO(r.content)).convert('RGBA')
+                        target_h = 84
+                        w = int(img.width * (target_h / img.height))
+                        img = img.resize((w, target_h), Image.Resampling.LANCZOS)
+                        ph = ImageTk.PhotoImage(img)
+                    except Exception as e:
+                        print(f"Error loading YouTube thumbnail {vid}: {e}")
+                        # Create a placeholder image
+                        img = Image.new('RGBA', (150, 84), (40, 44, 52))
+                        from PIL import ImageDraw, ImageFont
+                        draw = ImageDraw.Draw(img)
+                        try:
+                            font = ImageFont.truetype("arial.ttf", 10)
+                        except:
+                            font = ImageFont.load_default()
+                        draw.text((10, 10), "No thumbnail\navailable", fill=(255, 255, 255), font=font)
+                        ph = ImageTk.PhotoImage(img)
                     def set_ui():
                         thumb_label.config(image=ph, text='')
                         thumb_label.image = ph
@@ -1339,6 +1453,7 @@ class HytaleApp:
         tk.Label(container, text=f'⚠️ {msg}', fg='#ff6b6b', bg=self.colors['card_bg'], font=('Arial', 9)).pack(anchor='w', padx=8, pady=4)
 
 if __name__ == '__main__':
+    # Initialize and start the Tkinter application
     root = tk.Tk()
-    app = HytaleApp(root)
-    root.mainloop()
+    app = HytaleApp(root)  # Create the main application instance
+    root.mainloop()  # Start the Tkinter event loop
